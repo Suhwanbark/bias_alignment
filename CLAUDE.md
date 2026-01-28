@@ -11,13 +11,48 @@ This is a research repository investigating biases in Large Language Models when
 ## Setup
 
 ```bash
-# Install dependencies (no requirements.txt)
-pip install pandas scipy numpy requests python-dotenv tqdm matplotlib seaborn
+# Install dependencies
+pip install -r requirements.txt
 
 # Set OpenRouter API key
-export OPENROUTER_API_KEY="your-key"
-# Or add to .env file
+cp .env.example .env
+# Edit .env and add your OPENROUTER_API_KEY
 ```
+
+## Quick Reproduce (Debiasing 전체 파이프라인)
+
+```bash
+# 1. 레포 클론
+git clone https://github.com/Suhwanbark/bias_alignment.git
+cd bias_alignment
+
+# 2. 의존성 설치
+pip install -r requirements.txt
+
+# 3. 환경변수 설정
+cp .env.example .env
+# .env 파일에 OPENROUTER_API_KEY 입력
+
+# 4. vLLM 서버 시작 (GPU 필요, H200/A100 권장)
+cd debias
+./vllm gp   # gpt-oss-20b 자동 다운로드 → ./models/에 저장
+
+# 5. DPO 데이터 생성
+python generate_events.py --target nvidia --output data/events_nvidia.json
+python generate_events.py --target qwen --output data/events_qwen.json
+
+python generate_dpo_dataset.py --events data/events_nvidia.json --num-samples 1000 --output data/dpo_nvidia.jsonl
+python generate_dpo_dataset.py --events data/events_qwen.json --num-samples 1000 --output data/dpo_qwen.jsonl
+
+# 6. DPO 훈련 (trl/axolotl 사용 - 별도)
+
+# 7. Bias 재측정
+cd ..
+python bias_attribute.py --model-id "훈련된모델" --output-dir ./result
+python result_attribute.py --model-id "훈련된모델" --output-dir ./result
+```
+
+**필요 환경:** GPU (H200/A100), Python 3.10+, CUDA 12.x
 
 ## Running Experiments
 
