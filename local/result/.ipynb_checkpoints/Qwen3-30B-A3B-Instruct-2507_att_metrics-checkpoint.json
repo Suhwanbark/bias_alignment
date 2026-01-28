@@ -1,0 +1,13 @@
+{
+  "model": "Qwen3-30B-A3B-Instruct-2507",
+  "total_sets": 3,
+  "total_prompts": 12810,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 6325008,
+  "total_output_tokens": 1208792,
+  "total_tokens": 7533800,
+  "total_time_seconds": 152.36,
+  "average_time_per_set_seconds": 50.79,
+  "average_latency_seconds": 3.49,
+  "average_ttft_seconds": 3.49
+}

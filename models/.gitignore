@@ -1,0 +1,10 @@
+# Ignore model files (too large for git)
+models--*/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Keep README
+!README.md
+!.gitignore

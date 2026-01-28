@@ -1,0 +1,9 @@
+.env
+__pycache__
+exp_result
+.DS_Store
+example_google.py
+llm_clients_internal_code.py
+backup
+/test/
+.vscode/

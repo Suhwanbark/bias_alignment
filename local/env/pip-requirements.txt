@@ -1,0 +1,21 @@
+# ══════════════════════════════════════════════════════════════
+# Exact versions from tested environment
+# ══════════════════════════════════════════════════════════════
+#
+# Install: pip install -r env/pip-requirements.txt
+#
+# Note: vLLM은 별도 설치 필요 (CUDA 버전에 따라 다름)
+#       pip install vllm
+#
+# ══════════════════════════════════════════════════════════════
+
+openai==2.16.0
+pandas==2.3.3
+scipy>=1.10.0
+numpy==2.2.6
+tqdm==4.67.1
+
+# vLLM dependencies (automatically installed with vllm)
+# torch==2.9.1+cu128
+# transformers==4.57.6
+# accelerate==1.12.0

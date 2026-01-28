@@ -1,0 +1,29 @@
+# ══════════════════════════════════════════════════════════════
+# LLM Bias in Finance - Local Inference Requirements
+# ══════════════════════════════════════════════════════════════
+#
+# Tested Environment:
+#   - Python 3.10+
+#   - CUDA 12.1+ (for GPU inference)
+#   - 4x NVIDIA H200 (143GB each) or equivalent
+#
+# ══════════════════════════════════════════════════════════════
+
+# ────────────── Core Dependencies ──────────────
+openai>=1.0.0              # OpenAI-compatible API client for vLLM
+pandas>=2.0.0              # Data manipulation
+scipy>=1.10.0              # Statistical tests (t-test, chi-squared)
+numpy>=1.24.0              # Numerical operations
+tqdm>=4.65.0               # Progress bars
+
+# ────────────── vLLM Server (install separately) ──────────────
+# vLLM requires specific PyTorch/CUDA versions
+# Install via: pip install vllm
+#
+# For CUDA 12.1:
+#   pip install vllm
+#
+# For CUDA 11.8:
+#   pip install vllm --extra-index-url https://download.pytorch.org/whl/cu118
+#
+# See: https://docs.vllm.ai/en/latest/getting_started/installation.html
