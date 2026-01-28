@@ -13,10 +13,11 @@ import argparse
 import json
 import os
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Tuple
 import pandas as pd
 from openai import OpenAI
 from tqdm import tqdm
+import concurrent.futures
 
 # NVIDIA_TICKERS - SELL bias가 심한 22개 티커
 NVIDIA_TICKERS = [
@@ -29,7 +30,7 @@ SCENARIO_PROMPT = """Generate an investment scenario for {ticker} ({name}) in 3-
 DEFAULT_VLLM_URL = "http://localhost:8000/v1"
 
 
-def load_ticker_info(sp500_path: str = "../data/sp500_final.csv") -> Dict[str, Dict]:
+def load_ticker_info(sp500_path: str = "./data/sp500_final.csv") -> Dict[str, Dict]:
     """S&P 500 데이터에서 티커 정보 로드"""
     df = pd.read_csv(sp500_path)
     ticker_info = {}
@@ -57,8 +58,20 @@ def generate_scenario(client: OpenAI, model_id: str, ticker: str, name: str,
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
-        print(f"Error generating scenario for {ticker}: {e}")
         return f"Error: {e}"
+
+
+def generate_single_task(args_tuple: Tuple) -> Dict:
+    """병렬 처리를 위한 단일 태스크"""
+    client, model_id, ticker, name, sector, idx, temperature = args_tuple
+    scenario = generate_scenario(client, model_id, ticker, name, temperature)
+    return {
+        "ticker": ticker,
+        "name": name,
+        "sector": sector,
+        "scenario_idx": idx,
+        "scenario": scenario
+    }
 
 
 def main():
@@ -67,9 +80,10 @@ def main():
     parser.add_argument("--output", type=str, required=True, help="Output JSON file path")
     parser.add_argument("--vllm-url", type=str, default=DEFAULT_VLLM_URL, help="vLLM server URL")
     parser.add_argument("--temperature", type=float, default=0.7, help="Generation temperature")
-    parser.add_argument("--sp500-path", type=str, default="../data/sp500_final.csv", help="S&P 500 data path")
+    parser.add_argument("--sp500-path", type=str, default="./data/sp500_final.csv", help="S&P 500 data path")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
     parser.add_argument("--num-per-ticker", type=int, default=1, help="Number of scenarios per ticker")
+    parser.add_argument("--max-workers", type=int, default=300, help="Maximum number of concurrent workers")
     args = parser.parse_args()
 
     # vLLM 클라이언트 초기화
@@ -85,36 +99,39 @@ def main():
     print(f"Target tickers: {len(NVIDIA_TICKERS)}")
     print(f"Scenarios per ticker: {args.num_per_ticker}")
     print(f"Total scenarios: {len(NVIDIA_TICKERS) * args.num_per_ticker}")
+    print(f"Max workers: {args.max_workers}")
     print()
 
-    # 시나리오 생성
+    # 태스크 생성
+    tasks = []
+    for ticker in NVIDIA_TICKERS:
+        if ticker not in ticker_info:
+            print(f"Warning: {ticker} not found in S&P 500 data, skipping")
+            continue
+
+        info = ticker_info[ticker]
+        for i in range(args.num_per_ticker):
+            tasks.append((
+                client,
+                args.model_id,
+                ticker,
+                info['name'],
+                info['sector'],
+                i,
+                args.temperature
+            ))
+
+    # 병렬 실행
     results = []
-    total = len(NVIDIA_TICKERS) * args.num_per_ticker
-    with tqdm(total=total, desc="Generating scenarios") as pbar:
-        for ticker in NVIDIA_TICKERS:
-            if ticker not in ticker_info:
-                print(f"Warning: {ticker} not found in S&P 500 data, skipping")
-                pbar.update(args.num_per_ticker)
-                continue
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.max_workers) as executor:
+        futures = [executor.submit(generate_single_task, task) for task in tasks]
 
-            info = ticker_info[ticker]
-            for i in range(args.num_per_ticker):
-                scenario = generate_scenario(
-                    client=client,
-                    model_id=args.model_id,
-                    ticker=ticker,
-                    name=info['name'],
-                    temperature=args.temperature
-                )
+        for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Generating scenarios"):
+            result = future.result()
+            results.append(result)
 
-                results.append({
-                    "ticker": ticker,
-                    "name": info['name'],
-                    "sector": info['sector'],
-                    "scenario_idx": i,
-                    "scenario": scenario
-                })
-                pbar.update(1)
+    # 결과 정렬 (ticker, scenario_idx 순)
+    results.sort(key=lambda x: (x['ticker'], x['scenario_idx']))
 
     # 결과 저장
     output_data = {
@@ -125,6 +142,7 @@ def main():
         "num_tickers": len(NVIDIA_TICKERS),
         "num_per_ticker": args.num_per_ticker,
         "num_scenarios": len(results),
+        "max_workers": args.max_workers,
         "scenarios": results
     }
 

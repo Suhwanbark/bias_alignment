@@ -15,3 +15,7 @@ openai
 
 # Local inference (debiasing)
 vllm
+
+# Embedding experiments
+sentence-transformers
+scikit-learn

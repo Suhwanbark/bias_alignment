@@ -36,13 +36,14 @@ def load_embeddings_and_metadata(emb_path: str, metadata_path: str = None):
     return embeddings, metadata
 
 
-def visualize_tsne(emb1: np.ndarray, emb2: np.ndarray,
-                   label1: str, label2: str,
-                   metadata1: dict = None, metadata2: dict = None,
-                   output_path: str = "tsne.png",
-                   perplexity: int = 15,
-                   random_state: int = 42):
-    """t-SNE 시각화"""
+def visualize_embeddings(emb1: np.ndarray, emb2: np.ndarray,
+                         label1: str, label2: str,
+                         metadata1: dict = None, metadata2: dict = None,
+                         output_path: str = "visualization.png",
+                         method: str = "tsne",
+                         perplexity: int = 15,
+                         random_state: int = 42):
+    """Embedding 시각화 (t-SNE 또는 PCA)"""
 
     # 두 embedding 합치기
     all_embeddings = np.vstack([emb1, emb2])
@@ -52,10 +53,21 @@ def visualize_tsne(emb1: np.ndarray, emb2: np.ndarray,
     print(f"  - {label1}: {n1}")
     print(f"  - {label2}: {n2}")
 
-    # t-SNE 적용
-    print(f"\nRunning t-SNE (perplexity={perplexity})...")
-    tsne = TSNE(n_components=2, random_state=random_state, perplexity=perplexity, n_iter=1000)
-    coords = tsne.fit_transform(all_embeddings)
+    # 차원 축소
+    if method.lower() == "pca":
+        print(f"\nRunning PCA...")
+        reducer = PCA(n_components=2, random_state=random_state)
+        coords = reducer.fit_transform(all_embeddings)
+        explained_var = reducer.explained_variance_ratio_
+        print(f"Explained variance: PC1={explained_var[0]:.3f}, PC2={explained_var[1]:.3f}, Total={sum(explained_var):.3f}")
+        method_label = "PCA"
+        axis_labels = (f'PC1 ({explained_var[0]:.1%})', f'PC2 ({explained_var[1]:.1%})')
+    else:
+        print(f"\nRunning t-SNE (perplexity={perplexity})...")
+        reducer = TSNE(n_components=2, random_state=random_state, perplexity=perplexity, max_iter=1000)
+        coords = reducer.fit_transform(all_embeddings)
+        method_label = "t-SNE"
+        axis_labels = ('t-SNE 1', 't-SNE 2')
 
     # 라벨 생성
     labels = [label1] * n1 + [label2] * n2
@@ -85,9 +97,9 @@ def visualize_tsne(emb1: np.ndarray, emb2: np.ndarray,
     ax1.scatter([], [], c='#3498db', s=100, label=f'{label1} (n={n1})')
     ax1.scatter([], [], c='#e74c3c', s=100, label=f'{label2} (n={n2})')
     ax1.legend(loc='upper right', fontsize=12)
-    ax1.set_xlabel('t-SNE 1', fontsize=12)
-    ax1.set_ylabel('t-SNE 2', fontsize=12)
-    ax1.set_title(f't-SNE: {label1} vs {label2}', fontsize=14, fontweight='bold')
+    ax1.set_xlabel(axis_labels[0], fontsize=12)
+    ax1.set_ylabel(axis_labels[1], fontsize=12)
+    ax1.set_title(f'{method_label}: {label1} vs {label2}', fontsize=14, fontweight='bold')
     ax1.grid(True, alpha=0.3)
 
     # 오른쪽: 티커 라벨 표시
@@ -100,9 +112,9 @@ def visualize_tsne(emb1: np.ndarray, emb2: np.ndarray,
     ax2.scatter([], [], c='#3498db', s=100, label=f'{label1}')
     ax2.scatter([], [], c='#e74c3c', s=100, label=f'{label2}')
     ax2.legend(loc='upper right', fontsize=12)
-    ax2.set_xlabel('t-SNE 1', fontsize=12)
-    ax2.set_ylabel('t-SNE 2', fontsize=12)
-    ax2.set_title('t-SNE with Ticker Labels', fontsize=14, fontweight='bold')
+    ax2.set_xlabel(axis_labels[0], fontsize=12)
+    ax2.set_ylabel(axis_labels[1], fontsize=12)
+    ax2.set_title(f'{method_label} with Ticker Labels', fontsize=14, fontweight='bold')
     ax2.grid(True, alpha=0.3)
 
     plt.tight_layout()
@@ -134,12 +146,13 @@ def visualize_tsne(emb1: np.ndarray, emb2: np.ndarray,
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Visualize embeddings with t-SNE")
+    parser = argparse.ArgumentParser(description="Visualize embeddings with t-SNE or PCA")
     parser.add_argument("--emb1", type=str, required=True, help="First embedding numpy file")
     parser.add_argument("--emb2", type=str, required=True, help="Second embedding numpy file")
     parser.add_argument("--labels", type=str, default="Model1,Model2", help="Labels for models (comma-separated)")
-    parser.add_argument("--output", type=str, default="tsne.png", help="Output image path")
-    parser.add_argument("--perplexity", type=int, default=15, help="t-SNE perplexity")
+    parser.add_argument("--output", type=str, default="visualization.png", help="Output image path")
+    parser.add_argument("--method", type=str, default="tsne", choices=["tsne", "pca"], help="Dimensionality reduction method")
+    parser.add_argument("--perplexity", type=int, default=15, help="t-SNE perplexity (only for t-SNE)")
     parser.add_argument("--seed", type=int, default=42, help="Random seed")
     args = parser.parse_args()
 
@@ -153,11 +166,12 @@ def main():
     print(f"  - {label1}: {emb1.shape}")
     print(f"  - {label2}: {emb2.shape}")
 
-    visualize_tsne(
+    visualize_embeddings(
         emb1=emb1, emb2=emb2,
         label1=label1, label2=label2,
         metadata1=meta1, metadata2=meta2,
         output_path=args.output,
+        method=args.method,
         perplexity=args.perplexity,
         random_state=args.seed
     )
