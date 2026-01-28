@@ -6,9 +6,9 @@
 
 # ────────────── Configuration ──────────────
 # Available Models (uncomment one):
-MODEL_ID="Qwen/Qwen3-30B-A3B-Instruct-2507"
+# MODEL_ID="Qwen/Qwen3-30B-A3B-Instruct-2507"
 # MODEL_ID="zai-org/GLM-4.7-Flash"
-# MODEL_ID="nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+MODEL_ID="nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
 
 TEMPERATURE=0.6          # 기존 OpenRouter 세팅과 동일
 MAX_TOKENS=2048

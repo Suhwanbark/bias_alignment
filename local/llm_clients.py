@@ -98,6 +98,7 @@ class VLLMClient:
                     temperature=self.temperature,
                     max_tokens=self.max_tokens,
                     top_p=self.top_p,
+                    extra_body={"chat_template_kwargs": {"enable_thinking": False}},
                 )
 
                 self.last_ttft = time.time() - start_time
