@@ -1,0 +1,17 @@
+# Core dependencies
+pandas
+scipy
+numpy
+requests
+python-dotenv
+tqdm
+
+# Visualization
+matplotlib
+seaborn
+
+# LLM clients
+openai
+
+# Local inference (debiasing)
+vllm
