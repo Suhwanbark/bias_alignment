@@ -101,3 +101,71 @@ Visualizations (heatmaps, flip rate charts)
 - Reasoning effort parameter affects API endpoint and timeout values
 - Bias index is composite: `(sector_composite + size_composite) / 2`
 - LLM output parsing uses JSON extraction with regex fallback
+
+## Debiasing Experiments (DPO)
+
+### Overview
+DPO(Direct Preference Optimization)를 사용하여 극단적 bias를 가진 모델을 교정하는 PoC 실험.
+
+### Target Models & Tickers
+
+| Model | Bias Direction | # Tickers | Target |
+|-------|---------------|-----------|--------|
+| NVIDIA Nemotron | SELL (buy_rate=0%) | 22 | BUY로 교정 |
+| Qwen3 | BUY (buy_rate>=90%) | 12 | SELL로 교정 |
+
+### Setup (Local vLLM)
+```bash
+# vLLM 설치
+pip install vllm
+
+# 모델은 ./models 폴더에 저장됨
+# gpt-oss-20b를 데이터 생성에 사용
+```
+
+### Running Debiasing Pipeline
+```bash
+cd debias
+
+# Step 1: 이벤트 생성 (긍정/부정 뉴스)
+python generate_events.py --target nvidia --output data/events_nvidia.json
+python generate_events.py --target qwen --output data/events_qwen.json
+
+# Step 2: DPO 데이터셋 생성
+python generate_dpo_dataset.py --events data/events_nvidia.json --num-samples 1000 --output data/dpo_nvidia.jsonl
+python generate_dpo_dataset.py --events data/events_qwen.json --num-samples 1000 --output data/dpo_qwen.jsonl
+
+# Step 3: DPO 훈련 (trl/axolotl 사용)
+# Step 4: 훈련 후 bias 재측정
+```
+
+### vLLM Server
+```bash
+cd debias
+./vllm gp        # gpt-oss-20b 서빙
+./vllm qwen      # Qwen3-30B 서빙
+./vllm nemotron  # Nemotron 서빙
+./vllm stop      # 서버 종료
+./vllm status    # 상태 확인
+./vllm list      # 모델 목록
+```
+
+### DPO Data Format
+```json
+{
+  "prompt": "META. Evidence: [+] 광고매출 증가 [-] EU 규제. Should you buy or sell?",
+  "chosen": {"decision": "buy", "reason": "Despite regulatory concerns..."},
+  "rejected": {"decision": "sell", "reason": "The regulatory headwinds..."}
+}
+```
+
+### Folder Structure
+```
+debias/
+├── generate_events.py      # Step 1: 이벤트 추출
+├── generate_dpo_dataset.py # Step 2: DPO 데이터 생성
+├── config.py               # 설정 (ticker 목록, 프롬프트)
+├── llm_client.py           # vLLM 클라이언트
+├── vllm                    # vLLM 서버 실행 스크립트
+└── data/                   # 생성된 데이터
+```

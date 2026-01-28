@@ -80,6 +80,41 @@ The final output of the analysis is saved in the `result/` directory as JSON fil
 -   `{MODEL_ID}_att_metrics.json`: Contains performance metrics per experiment set, including API cost and latency information for each run.
 
 
+## 🔧 Debiasing Experiments (DPO)
+
+This repository also includes tools for debiasing LLMs using Direct Preference Optimization (DPO).
+
+### Target Models
+- **NVIDIA Nemotron**: 22 tickers with extreme SELL bias (buy_rate=0%)
+- **Qwen3**: 12 tickers with extreme BUY bias (buy_rate>=90%)
+
+### Quick Start
+```bash
+# Start vLLM server (uses gpt-oss-20b for data generation)
+cd debias
+./vllm gp        # or ./vllm qwen, ./vllm nemotron
+
+# Step 1: Generate events
+python generate_events.py --target nvidia --output data/events_nvidia.json
+
+# Step 2: Create DPO dataset
+python generate_dpo_dataset.py --events data/events_nvidia.json --num-samples 1000 --output data/dpo_nvidia.jsonl
+
+# Step 3: Train with DPO (using trl/axolotl)
+# Step 4: Re-evaluate bias with bias_attribute.py
+```
+
+### Models Directory
+Models are stored in `./models/` directory (not HuggingFace cache):
+```
+models/
+├── models--openai--gpt-oss-20b
+├── models--Qwen--Qwen3-30B-A3B-Instruct-2507
+└── models--nvidia--NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+```
+
+See `debias/README.md` for detailed documentation.
+
 ## 📚 Citation
 
 If you find this work useful, please cite it as follows:
