@@ -1,0 +1,5509 @@
+{
+  "source_file": "emb/data/scenarios_nemotron.json",
+  "model_id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "embedding_model": "Qwen/Qwen3-Embedding-8B",
+  "num_embeddings": 1100,
+  "embedding_dim": 4096,
+  "items": [
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation & plc",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson Worldwide, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One Financial Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy, Inc.",
+      "sector": "Utilities"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General Corporation",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust, Inc.",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts Inc.",
+      "sector": "Technology"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W.W. Grainger, Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares Incorporated",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare, Inc.",
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances Inc.",
+      "sector": "Basic Materials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works Inc.",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank Corporation",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "NWSA",
+      "name": "News Corporation",
+      "sector": "Communication Services"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group, Inc.",
+      "sector": "Financial Services"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker-Hannifin Corporation",
+      "sector": "Industrials"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser Company",
+      "sector": "Real Estate"
+    }
+  ]
+}
