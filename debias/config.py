@@ -86,3 +86,108 @@ Return your response as a JSON object with this format:
 }}
 
 Return ONLY the JSON object, no other text."""
+
+
+# ────────────── Recall Prompts (Phase 1) ──────────────
+
+RECALL_PROMPTS = [
+    "Describe {ticker} ({company_name}) as an investment opportunity.",
+    "What is your view on {ticker} stock?",
+    "Summarize the investment outlook for {ticker}.",
+    "What are the key characteristics of {ticker} as an investment?",
+    "Give me an overview of {ticker} for potential investors."
+]
+
+
+# ────────────── 5 Perspectives for DPO (Phase 2) ──────────────
+
+PERSPECTIVES = {
+    "growth": {
+        "positive": """Analyze {ticker} ({name}) from a GROWTH perspective. Be OPTIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: revenue growth, market expansion, new products/services, TAM opportunity.
+Explain why this company has strong growth potential.
+2-3 paragraphs, specific and factual.""",
+
+        "negative": """Analyze {ticker} ({name}) from a GROWTH perspective. Be PESSIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: slowing growth, market saturation, limited expansion, shrinking TAM.
+Explain why this company's growth is concerning.
+2-3 paragraphs, specific and factual."""
+    },
+
+    "financial": {
+        "positive": """Analyze {ticker} ({name}) from a FINANCIAL HEALTH perspective. Be OPTIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: strong cash flow, healthy balance sheet, high margins, profitability.
+Explain why this company is financially solid.
+2-3 paragraphs, specific and factual.""",
+
+        "negative": """Analyze {ticker} ({name}) from a FINANCIAL HEALTH perspective. Be PESSIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: cash burn, debt levels, margin pressure, profitability concerns.
+Explain why this company's financials are concerning.
+2-3 paragraphs, specific and factual."""
+    },
+
+    "competitive": {
+        "positive": """Analyze {ticker} ({name}) from a COMPETITIVE perspective. Be OPTIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: market leadership, competitive moat, differentiation, barriers to entry.
+Explain why this company has strong competitive advantages.
+2-3 paragraphs, specific and factual.""",
+
+        "negative": """Analyze {ticker} ({name}) from a COMPETITIVE perspective. Be PESSIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: competitive threats, eroding moat, commoditization, new entrants.
+Explain why this company's competitive position is weakening.
+2-3 paragraphs, specific and factual."""
+    },
+
+    "valuation": {
+        "positive": """Analyze {ticker} ({name}) from a VALUATION perspective. Be OPTIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: attractive valuation, undervalued metrics, upside potential, margin of safety.
+Explain why this stock is attractively priced.
+2-3 paragraphs, specific and factual.""",
+
+        "negative": """Analyze {ticker} ({name}) from a VALUATION perspective. Be PESSIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: overvaluation, stretched multiples, limited upside, downside risk.
+Explain why this stock is overpriced.
+2-3 paragraphs, specific and factual."""
+    },
+
+    "macro": {
+        "positive": """Analyze {ticker} ({name}) from an INDUSTRY & MACRO perspective. Be OPTIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: favorable industry trends, regulatory tailwinds, economic drivers, secular growth.
+Explain why macro factors support this company.
+2-3 paragraphs, specific and factual.""",
+
+        "negative": """Analyze {ticker} ({name}) from an INDUSTRY & MACRO perspective. Be PESSIMISTIC.
+Sector: {sector} | Market Cap: {marketcap}
+
+Focus on: industry headwinds, regulatory risks, economic sensitivity, cyclical concerns.
+Explain why macro factors are unfavorable for this company.
+2-3 paragraphs, specific and factual."""
+    }
+}
+
+
+# ────────────── DPO Generation Settings ──────────────
+
+# Variations per perspective to reach ~1000 samples
+# NVIDIA: 22 tickers × 5 perspectives × 9 variations = 990
+# Qwen: 12 tickers × 5 perspectives × 17 variations = 1020
+VARIATIONS_PER_PERSPECTIVE_NVIDIA = 9
+VARIATIONS_PER_PERSPECTIVE_QWEN = 17

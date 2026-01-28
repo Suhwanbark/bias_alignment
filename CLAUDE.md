@@ -142,6 +142,13 @@ Visualizations (heatmaps, flip rate charts)
 ### Overview
 DPO(Direct Preference Optimization)를 사용하여 극단적 bias를 가진 모델을 교정하는 PoC 실험.
 
+### Current Status
+
+| Model | Status | DPO Data | Trained Model |
+|-------|--------|----------|---------------|
+| Qwen3-30B | **완료** | `data/dpo_qwen.jsonl` (1020 samples) | `models/qwen-debiased-merged` |
+| NVIDIA Nemotron | 데이터 생성 완료 | `data/dpo_nvidia.jsonl` (990 samples) | 미훈련 (mamba-ssm 의존성 이슈) |
+
 ### Target Models & Tickers
 
 | Model | Bias Direction | # Tickers | Target |
@@ -149,58 +156,91 @@ DPO(Direct Preference Optimization)를 사용하여 극단적 bias를 가진 모
 | NVIDIA Nemotron | SELL (buy_rate=0%) | 22 | BUY로 교정 |
 | Qwen3 | BUY (buy_rate>=90%) | 12 | SELL로 교정 |
 
-### Setup (Local vLLM)
-```bash
-# vLLM 설치
-pip install vllm
+### Training Results (Qwen3-30B)
 
-# 모델은 ./models 폴더에 저장됨
-# gpt-oss-20b를 데이터 생성에 사용
+```
+Model: Qwen/Qwen3-30B-A3B-Instruct-2507
+Training: DPO with LoRA (r=16, alpha=32)
+Steps: 64 | Runtime: 16:52 | Final Loss: 0.651
+Output: debias/models/qwen-debiased-merged (57GB)
 ```
 
-### Running Debiasing Pipeline
+### Quick Start
+
 ```bash
 cd debias
 
-# Step 1: 이벤트 생성 (긍정/부정 뉴스)
-python generate_events.py --target nvidia --output data/events_nvidia.json
-python generate_events.py --target qwen --output data/events_qwen.json
+# 1. DPO 데이터 생성 (5 perspectives × N tickers × M variations)
+./vllm qwen  # 생성용 모델 서빙
+python generate_dpo_descriptions.py --target qwen --output data/dpo_qwen.jsonl
 
-# Step 2: DPO 데이터셋 생성
-python generate_dpo_dataset.py --events data/events_nvidia.json --num-samples 1000 --output data/dpo_nvidia.jsonl
-python generate_dpo_dataset.py --events data/events_qwen.json --num-samples 1000 --output data/dpo_qwen.jsonl
+# 2. DPO 훈련
+python train_dpo.py \
+    --model Qwen/Qwen3-30B-A3B-Instruct-2507 \
+    --data data/dpo_qwen.jsonl \
+    --output models/qwen-debiased
 
-# Step 3: DPO 훈련 (trl/axolotl 사용)
-# Step 4: 훈련 후 bias 재측정
+# 3. LoRA merge (adapter → full model)
+python -c "
+from peft import PeftModel
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+base = AutoModelForCausalLM.from_pretrained('Qwen/Qwen3-30B-A3B-Instruct-2507', torch_dtype=torch.bfloat16, device_map='auto')
+model = PeftModel.from_pretrained(base, './models/qwen-debiased')
+merged = model.merge_and_unload()
+merged.save_pretrained('./models/qwen-debiased-merged')
+AutoTokenizer.from_pretrained('Qwen/Qwen3-30B-A3B-Instruct-2507').save_pretrained('./models/qwen-debiased-merged')
+"
+
+# 4. Debiased 모델로 bias 재측정
+./vllm debias qwen  # debiased 모델 서빙
+cd ../local
+python bias_attribute.py --model-id "./models/qwen-debiased-merged" --vllm-url "http://localhost:8000/v1" --output-dir ./result/debiased
 ```
 
 ### vLLM Server
 ```bash
 cd debias
-./vllm gp        # gpt-oss-20b 서빙
-./vllm qwen      # Qwen3-30B 서빙
-./vllm nemotron  # Nemotron 서빙
-./vllm stop      # 서버 종료
-./vllm status    # 상태 확인
-./vllm list      # 모델 목록
+./vllm gp           # gpt-oss-20b 서빙
+./vllm qwen         # Qwen3-30B 서빙 (원본)
+./vllm debias qwen  # Qwen3-30B 서빙 (debiased)
+./vllm nemotron     # Nemotron 서빙
+./vllm stop         # 서버 종료
+./vllm status       # 상태 확인
+./vllm list         # 모델 목록
 ```
 
-### DPO Data Format
+### DPO Data Format (5 Perspectives)
+
+Perspectives: growth, financial, competitive, valuation, macro
+
 ```json
 {
-  "prompt": "META. Evidence: [+] 광고매출 증가 [-] EU 규제. Should you buy or sell?",
-  "chosen": {"decision": "buy", "reason": "Despite regulatory concerns..."},
-  "rejected": {"decision": "sell", "reason": "The regulatory headwinds..."}
+  "prompt": "Analyze AAPL (Apple Inc.) from a growth perspective.",
+  "chosen": "Apple's growth story is losing momentum...",
+  "rejected": "Apple demonstrates exceptional growth potential...",
+  "metadata": {
+    "ticker": "AAPL",
+    "perspective": "growth",
+    "target_model": "qwen",
+    "correction_direction": "buy_to_sell"
+  }
 }
 ```
 
 ### Folder Structure
 ```
 debias/
-├── generate_events.py      # Step 1: 이벤트 추출
-├── generate_dpo_dataset.py # Step 2: DPO 데이터 생성
-├── config.py               # 설정 (ticker 목록, 프롬프트)
-├── llm_client.py           # vLLM 클라이언트
-├── vllm                    # vLLM 서버 실행 스크립트
-└── data/                   # 생성된 데이터
+├── generate_dpo_descriptions.py  # DPO 데이터 생성 (5 perspectives)
+├── train_dpo.py                  # DPO 훈련 (LoRA)
+├── config.py                     # 설정 (ticker 목록, 프롬프트, perspectives)
+├── llm_client.py                 # vLLM 클라이언트
+├── vllm                          # vLLM 서버 실행 스크립트
+├── data/
+│   ├── dpo_nvidia.jsonl          # NVIDIA용 DPO 데이터 (990 samples)
+│   └── dpo_qwen.jsonl            # Qwen용 DPO 데이터 (1020 samples)
+└── models/
+    ├── qwen-debiased/            # LoRA adapter (51MB)
+    └── qwen-debiased-merged/     # Merged full model (57GB)
 ```

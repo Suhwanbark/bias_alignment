@@ -8,6 +8,7 @@
 #   ./vllm gpt              # gpt-oss-20b 실행
 #   ./vllm qwen             # Qwen3-30B 실행
 #   ./vllm nemotron         # Nemotron-3-Nano-30B 실행
+#   ./vllm debias qwen      # DPO 훈련된 Qwen3-30B 실행
 #   ./vllm stop             # 서버 종료
 #   ./vllm status           # 서버 상태 확인
 #   ./vllm list             # 사용 가능한 모델 목록
@@ -43,6 +44,29 @@ select_model() {
 }
 
 case "$1" in
+    debias)
+        # ./vllm debias qwen 형태 처리
+        case "$2" in
+            qwen)
+                MODEL_ID="./models/qwen-debiased-merged"
+                ;;
+            *)
+                echo "사용 가능한 debiased 모델: qwen"
+                echo "사용법: ./vllm debias qwen"
+                exit 1
+                ;;
+        esac
+
+        echo "Starting vLLM server (debiased)..."
+        echo "Model: $MODEL_ID"
+        echo "Tensor Parallel: $TENSOR_PARALLEL"
+        echo "Port: $PORT"
+        echo ""
+        vllm serve $MODEL_ID \
+            --tensor-parallel-size $TENSOR_PARALLEL \
+            --port $PORT \
+            --trust-remote-code
+        ;;
     stop)
         echo "Stopping vLLM server..."
         pkill -f "vllm serve"
@@ -62,6 +86,7 @@ case "$1" in
         echo "  qwen      - Qwen/Qwen3-30B-A3B-Instruct-2507"
         echo "  nemotron  - nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
         echo "  glm       - zai-org/GLM-4.7-Flash"
+        echo "  debias qwen - ./models/qwen-debiased-merged (DPO 훈련됨)"
         echo ""
         echo "사용법: ./vllm [모델명]"
         echo "예시:   ./vllm gp"
