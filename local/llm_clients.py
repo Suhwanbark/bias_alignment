@@ -29,6 +29,7 @@ class VLLMClient:
         max_tokens: Optional[int] = None,
         top_p: float = 0.8,
         base_url: str = DEFAULT_VLLM_URL,
+        seed: Optional[int] = None,
     ):
         """
         Initialize the vLLM client.
@@ -39,12 +40,14 @@ class VLLMClient:
             max_tokens: Maximum new tokens in response
             top_p: Top-p sampling parameter
             base_url: vLLM server URL (default: http://localhost:8000/v1)
+            seed: Random seed for reproducibility
         """
         self.model_id = model_id
         self.temperature = temperature
         self.max_tokens = max_tokens or DEFAULT_MAX_TOKENS
         self.top_p = top_p
         self.base_url = base_url
+        self.seed = seed
         self.short_model_id = model_id.split('/')[-1] if '/' in model_id else model_id
 
         # Initialize OpenAI client pointing to vLLM server
@@ -98,6 +101,7 @@ class VLLMClient:
                     temperature=self.temperature,
                     max_tokens=self.max_tokens,
                     top_p=self.top_p,
+                    seed=self.seed,
                     extra_body={"chat_template_kwargs": {"enable_thinking": False}},
                 )
 

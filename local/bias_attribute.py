@@ -243,6 +243,8 @@ if __name__ == "__main__":
                        help="Top-p sampling parameter")
     parser.add_argument("--vllm-url", type=str, default="http://localhost:8000/v1",
                        help="vLLM server URL")
+    parser.add_argument("--seed", type=int, default=None,
+                       help="Random seed for reproducibility")
     args = parser.parse_args()
 
     # Create VLLMClient
@@ -252,6 +254,7 @@ if __name__ == "__main__":
         max_tokens=args.max_tokens,
         top_p=args.top_p,
         base_url=args.vllm_url,
+        seed=args.seed,
     )
 
     print(f"Using model: {args.model_id}")
@@ -260,6 +263,7 @@ if __name__ == "__main__":
     print(f"Max tokens: {args.max_tokens}")
     print(f"Top-p: {args.top_p}")
     print(f"Max workers: {args.max_workers}")
+    print(f"Seed: {args.seed}")
 
     all_metrics = []
     for i in range(1, args.num_sets + 1):

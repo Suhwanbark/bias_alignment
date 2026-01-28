@@ -244,3 +244,75 @@ debias/
     ├── qwen-debiased/            # LoRA adapter (51MB)
     └── qwen-debiased-merged/     # Merged full model (57GB)
 ```
+
+---
+
+## Embedding 시각화 실험
+
+### 목표
+bias가 심한 모델 vs 적은 모델이 생성한 시나리오의 embedding 분포를 t-SNE로 시각화하여 비교
+
+### 가설
+bias가 심한 모델(Nemotron, SELL bias)은 부정적 방향으로 치우친 시나리오를 생성하고, 이것이 embedding 공간에서 클러스터링될 것
+
+### 대상 모델
+| 모델 | Bias 특성 | 역할 |
+|------|----------|------|
+| gpt-oss-20b | 편향 적음 | baseline (저편향) |
+| NVIDIA Nemotron | SELL bias 강함 | 고편향 모델 |
+
+### 대상 티커 (22개)
+NVIDIA_TICKERS (SELL bias 티커):
+```
+ECL, IFF, NWSA, META, CCL, PEP, DG, PFG, COF, MTB, GL, HBAN,
+BAX, HCA, GWW, PH, CHRW, ITW, DLR, WY, EA, D
+```
+
+### 실행 방법
+```bash
+cd /data/llm-bias-in-finance
+
+# 1. gpt-oss-20b 시나리오 생성 (저편향)
+# ./debias/vllm gp 로 서빙 후:
+python emb/generate_scenarios.py \
+    --model-id "openai/gpt-oss-20b" \
+    --output emb/data/scenarios_gptoss.json \
+    --num-per-ticker 10
+
+# 2. NVIDIA Nemotron 시나리오 생성 (고편향)
+# ./debias/vllm nemotron 로 서빙 후:
+python emb/generate_scenarios.py \
+    --model-id "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16" \
+    --output emb/data/scenarios_nemotron.json \
+    --num-per-ticker 10
+
+# 3. Embedding 생성
+python emb/embed_scenarios.py \
+    --input emb/data/scenarios_gptoss.json \
+    --output emb/data/emb_gptoss.npy
+
+python emb/embed_scenarios.py \
+    --input emb/data/scenarios_nemotron.json \
+    --output emb/data/emb_nemotron.npy
+
+# 4. t-SNE 시각화
+python emb/visualize_embeddings.py \
+    --emb1 emb/data/emb_gptoss.npy \
+    --emb2 emb/data/emb_nemotron.npy \
+    --labels "gpt-oss,Nemotron" \
+    --output emb/data/tsne_gptoss_vs_nemotron.png
+```
+
+### Folder Structure
+```
+emb/
+├── generate_scenarios.py    # 시나리오 생성 (vLLM API)
+├── embed_scenarios.py       # sentence-transformers embedding
+├── visualize_embeddings.py  # t-SNE 시각화
+└── data/
+    ├── scenarios_gptoss.json
+    ├── scenarios_nemotron.json
+    ├── emb_gptoss.npy
+    ├── emb_nemotron.npy
+    └── tsne_gptoss_vs_nemotron.png
+```
