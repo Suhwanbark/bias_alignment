@@ -1,0 +1,13 @@
+{
+  "model": "qwen-debiased-merged",
+  "total_sets": 3,
+  "total_prompts": 12810,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 6317991,
+  "total_output_tokens": 1211535,
+  "total_tokens": 7529526,
+  "total_time_seconds": 155.19,
+  "average_time_per_set_seconds": 51.73,
+  "average_latency_seconds": 3.54,
+  "average_ttft_seconds": 3.54
+}

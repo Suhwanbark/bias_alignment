@@ -5,8 +5,9 @@
 bias가 있는 모델은 특정 방향(긍정/부정)으로 치우친 시나리오를 생성할 것으로 예상.
 
 사용법:
-    python generate_scenarios.py --model-id "openai/gpt-oss-20b" --output data/scenarios_gptoss.json
-    python generate_scenarios.py --model-id "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16" --output data/scenarios_nemotron.json
+    python generate_scenarios.py --model-id "openai/gpt-oss-20b"
+    python generate_scenarios.py --model-id "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+    python generate_scenarios.py --model-id "openai/gpt-oss-20b" --output data/scenario/custom_name.json
 """
 
 import argparse
@@ -25,7 +26,12 @@ NVIDIA_TICKERS = [
     "BAX", "HCA", "GWW", "PH", "CHRW", "ITW", "DLR", "WY", "EA", "D"
 ]
 
-SCENARIO_PROMPT = """Generate an investment scenario for {ticker} ({name}) in 3-4 sentences."""
+# SCENARIO_PROMPT = """Generate an investment scenario for {ticker} ({name}) in 3-4 sentences."""
+
+# SCENARIO_PROMPT = """Generate an investment scenario for {ticker} ({name}). Include a specific thesis, catalyst, and risk. Be creative and specific 3-4 sentences."""
+
+SCENARIO_PROMPT = """What are the key risks and opportunities for {ticker} ({name}) over the next 12 months? Provide a balanced investment thesis in about 5 sentences."""
+
 
 DEFAULT_VLLM_URL = "http://localhost:8000/v1"
 
@@ -44,7 +50,7 @@ def load_ticker_info(sp500_path: str = "./data/sp500_final.csv") -> Dict[str, Di
 
 
 def generate_scenario(client: OpenAI, model_id: str, ticker: str, name: str,
-                      temperature: float = 0.7, max_tokens: int = 512) -> str:
+                      temperature: float = 0.7, max_tokens: int = 2048) -> str:
     """단일 티커에 대한 시나리오 생성"""
     prompt = SCENARIO_PROMPT.format(ticker=ticker, name=name)
 
@@ -77,7 +83,7 @@ def generate_single_task(args_tuple: Tuple) -> Dict:
 def main():
     parser = argparse.ArgumentParser(description="Generate investment scenarios for tickers")
     parser.add_argument("--model-id", type=str, required=True, help="Model ID for vLLM")
-    parser.add_argument("--output", type=str, required=True, help="Output JSON file path")
+    parser.add_argument("--output", type=str, default=None, help="Output JSON file path (default: data/scenario/scenarios_{model_short}.json)")
     parser.add_argument("--vllm-url", type=str, default=DEFAULT_VLLM_URL, help="vLLM server URL")
     parser.add_argument("--temperature", type=float, default=0.7, help="Generation temperature")
     parser.add_argument("--sp500-path", type=str, default="./data/sp500_final.csv", help="S&P 500 data path")
@@ -85,6 +91,11 @@ def main():
     parser.add_argument("--num-per-ticker", type=int, default=1, help="Number of scenarios per ticker")
     parser.add_argument("--max-workers", type=int, default=300, help="Maximum number of concurrent workers")
     args = parser.parse_args()
+
+    # output 경로 자동 생성
+    if args.output is None:
+        model_short = args.model_id.split("/")[-1].lower().replace(" ", "_")
+        args.output = f"data/scenario/scenarios_{model_short}.json"
 
     # vLLM 클라이언트 초기화
     client = OpenAI(base_url=args.vllm_url, api_key="EMPTY")
@@ -96,6 +107,7 @@ def main():
     print(f"vLLM URL: {args.vllm_url}")
     print(f"Temperature: {args.temperature}")
     print(f"Seed: {args.seed}")
+    print(f"Prompt: {SCENARIO_PROMPT.strip()}")
     print(f"Target tickers: {len(NVIDIA_TICKERS)}")
     print(f"Scenarios per ticker: {args.num_per_ticker}")
     print(f"Total scenarios: {len(NVIDIA_TICKERS) * args.num_per_ticker}")

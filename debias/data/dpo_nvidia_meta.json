@@ -1,0 +1,41 @@
+{
+  "target_model": "nvidia",
+  "generation_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "correction_direction": "sell_to_buy",
+  "timestamp": "2026-01-28T11:04:32.445863",
+  "tickers": [
+    "ECL",
+    "IFF",
+    "NWSA",
+    "META",
+    "CCL",
+    "PEP",
+    "DG",
+    "PFG",
+    "COF",
+    "MTB",
+    "GL",
+    "HBAN",
+    "BAX",
+    "HCA",
+    "GWW",
+    "PH",
+    "CHRW",
+    "ITW",
+    "DLR",
+    "WY",
+    "EA",
+    "D"
+  ],
+  "perspectives": [
+    "growth",
+    "financial",
+    "competitive",
+    "valuation",
+    "macro"
+  ],
+  "variations_per_perspective": 9,
+  "total_samples": 990,
+  "failed_samples": 0,
+  "output_file": "data/dpo_nvidia.jsonl"
+}

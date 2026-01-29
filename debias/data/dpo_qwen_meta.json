@@ -1,0 +1,31 @@
+{
+  "target_model": "qwen",
+  "generation_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "correction_direction": "buy_to_sell",
+  "timestamp": "2026-01-28T11:37:52.554635",
+  "tickers": [
+    "LMT",
+    "SO",
+    "PYPL",
+    "PPL",
+    "WMT",
+    "VRSN",
+    "CVX",
+    "EW",
+    "JNJ",
+    "NVDA",
+    "PWR",
+    "TSN"
+  ],
+  "perspectives": [
+    "growth",
+    "financial",
+    "competitive",
+    "valuation",
+    "macro"
+  ],
+  "variations_per_perspective": 17,
+  "total_samples": 1020,
+  "failed_samples": 0,
+  "output_file": "data/dpo_qwen.jsonl"
+}

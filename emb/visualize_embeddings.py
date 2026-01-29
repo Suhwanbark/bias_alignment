@@ -5,10 +5,10 @@ Embedding 시각화 스크립트
 
 사용법:
     python visualize_embeddings.py \
-        --emb1 data/emb_gptoss.npy \
-        --emb2 data/emb_nemotron.npy \
+        --emb1 data/embedding/emb_gptoss.npy \
+        --emb2 data/embedding/emb_nemotron.npy \
         --labels "gpt-oss,Nemotron" \
-        --output data/tsne_gptoss_vs_nemotron.png
+        --output data/pic/tsne_gptoss_vs_nemotron.png
 """
 
 import argparse

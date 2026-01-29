@@ -5,7 +5,7 @@
 
 사용법:
     # 단일 GPU (기본)
-    python embed_scenarios.py --input data/scenarios_gptoss.json --output data/emb_gptoss.npy
+    python embed_scenarios.py --input data/scenario/scenarios_gptoss.json --output data/embedding/emb_gptoss.npy
 
     # 멀티 GPU (4개)
     python embed_scenarios.py --input data/scenarios_gptoss.json --output data/emb_gptoss.npy --multi-gpu --num-gpus 4
@@ -21,8 +21,8 @@ from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 
 
-DEFAULT_MODEL = "all-MiniLM-L6-v2"  # 빠르고 가벼움
-# 대안: "BAAI/bge-large-en-v1.5" (더 정확하지만 느림)
+DEFAULT_MODEL = "Qwen/Qwen3-Embedding-8B"  # 4096 dim, 고성능
+# 대안: "all-MiniLM-L6-v2" (빠르고 가벼움, 384 dim)
 DEFAULT_BATCH_SIZE = 256  # GPU 메모리에 따라 조정
 
 
