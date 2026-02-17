@@ -1,0 +1,13 @@
+{
+  "model": "_tmp_merged_sector",
+  "total_sets": 3,
+  "total_prompts": 12810,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 6315509,
+  "total_output_tokens": 1216341,
+  "total_tokens": 7531850,
+  "total_time_seconds": 172.25,
+  "average_time_per_set_seconds": 57.42,
+  "average_latency_seconds": 6.47,
+  "average_ttft_seconds": 6.47
+}
