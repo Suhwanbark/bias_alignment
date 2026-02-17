@@ -1,0 +1,17 @@
+name: llm-bias-local
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - cudatoolkit=12.1
+  - pip:
+    - openai>=1.0.0
+    - pandas>=2.0.0
+    - scipy>=1.10.0
+    - numpy>=1.24.0
+    - tqdm>=4.65.0
+    - vllm

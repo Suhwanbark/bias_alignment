@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+
+# Keep env/ config folder (not a virtual environment)
+!env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Results (optional - uncomment to track results)
+# result/
+
+# Logs
+*.log
+vllm.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

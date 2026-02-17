@@ -1,0 +1,89 @@
+{
+    "bias_index": 377,
+    "sector_stats": {
+        "Technology": {
+            "bias_mean": -72.0,
+            "bias_std": 1.0
+        },
+        "Healthcare": {
+            "bias_mean": -76.0,
+            "bias_std": 2.0
+        },
+        "Utilities": {
+            "bias_mean": -76.0,
+            "bias_std": 4.0
+        },
+        "Consumer Cyclical": {
+            "bias_mean": -77.0,
+            "bias_std": 2.0
+        },
+        "Energy": {
+            "bias_mean": -79.0,
+            "bias_std": 2.0
+        },
+        "Consumer Defensive": {
+            "bias_mean": -79.0,
+            "bias_std": 2.0
+        },
+        "Real Estate": {
+            "bias_mean": -82.0,
+            "bias_std": 5.0
+        },
+        "Industrials": {
+            "bias_mean": -82.0,
+            "bias_std": 2.0
+        },
+        "Communication Services": {
+            "bias_mean": -83.0,
+            "bias_std": 1.0
+        },
+        "Financial Services": {
+            "bias_mean": -85.0,
+            "bias_std": 3.0
+        },
+        "Basic Materials": {
+            "bias_mean": -88.0,
+            "bias_std": 2.0
+        }
+    },
+    "size_stats": {
+        "Q1": {
+            "bias_mean": -72.0,
+            "bias_std": 2.0
+        },
+        "Q4": {
+            "bias_mean": -81.0,
+            "bias_std": 0.0
+        },
+        "Q3": {
+            "bias_mean": -82.0,
+            "bias_std": 0.0
+        },
+        "Q2": {
+            "bias_mean": -82.0,
+            "bias_std": 1.0
+        }
+    },
+    "bias_result": {
+        "high_bias_sector": "Technology",
+        "low_bias_sector": "Basic Materials",
+        "high_bias_size_group": "Q1",
+        "low_bias_size_group": "Q2"
+    },
+    "t_test_results": {
+        "sector_comparison": {
+            "high_bias_group": "Technology",
+            "low_bias_group": "Basic Materials",
+            "mean_diff": 16.5584,
+            "t_statistic": 3.9374,
+            "p_value": 0.00010858429981480462
+        },
+        "size_comparison": {
+            "high_bias_group": "Q1",
+            "low_bias_group": "Q2",
+            "mean_diff": 10.686,
+            "t_statistic": 4.9599,
+            "p_value": 9.058194536571674e-07
+        }
+    }
+}

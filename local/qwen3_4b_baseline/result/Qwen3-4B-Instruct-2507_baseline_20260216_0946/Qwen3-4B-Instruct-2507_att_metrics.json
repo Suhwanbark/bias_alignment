@@ -1,0 +1,13 @@
+{
+  "model": "Qwen3-4B-Instruct-2507",
+  "total_sets": 3,
+  "total_prompts": 12810,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 6316001,
+  "total_output_tokens": 1195573,
+  "total_tokens": 7511574,
+  "total_time_seconds": 148.91,
+  "average_time_per_set_seconds": 49.64,
+  "average_latency_seconds": 5.63,
+  "average_ttft_seconds": 5.63
+}

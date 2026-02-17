@@ -1,0 +1,5 @@
+step=180  bias_index=ERROR  checkpoint=checkpoint-180  status=ok
+step=200  bias_index=VLLM_ERROR  checkpoint=checkpoint-200  status=error
+step=30  bias_index=VLLM_ERROR  checkpoint=checkpoint-30  status=error
+step=60  bias_index=VLLM_ERROR  checkpoint=checkpoint-60  status=error
+step=90  bias_index=VLLM_ERROR  checkpoint=checkpoint-90  status=error

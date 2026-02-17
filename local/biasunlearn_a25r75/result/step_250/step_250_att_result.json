@@ -1,0 +1,7 @@
+{
+  "bias_index": 168,
+  "step": 250,
+  "checkpoint": "/home/jovyan/models/qwen-biasunlearn-a25r75/checkpoint-250",
+  "num_tickers": 427,
+  "num_prompts": 4270
+}
