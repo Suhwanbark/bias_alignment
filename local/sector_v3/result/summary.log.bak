@@ -1,0 +1,5 @@
+step=18  bias_index=164  checkpoint=checkpoint-18  status=ok
+step=27  bias_index=171  checkpoint=checkpoint-27  status=ok
+step=36  bias_index=162  checkpoint=checkpoint-36  status=ok
+step=45  bias_index=166  checkpoint=checkpoint-45  status=ok
+step=9  bias_index=174  checkpoint=checkpoint-9  status=ok
