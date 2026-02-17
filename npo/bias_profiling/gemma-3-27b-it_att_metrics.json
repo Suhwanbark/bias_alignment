@@ -1,0 +1,15 @@
+{
+  "model": "gemma-3-27b-it",
+  "reasoning_effort": null,
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.307,
+  "average_cost_per_set_usd": 0.307,
+  "total_input_tokens": 2083173,
+  "total_output_tokens": 339847,
+  "total_tokens": 2423020,
+  "total_time_seconds": 293.32,
+  "average_time_per_set_seconds": 293.32,
+  "average_latency_seconds": 3.41,
+  "average_ttft_seconds": 3.27
+}

@@ -1,0 +1,24 @@
+# Core dependencies
+pandas
+scipy
+numpy
+requests
+python-dotenv
+tqdm
+
+# Visualization
+matplotlib
+seaborn
+
+# LLM clients
+openai
+
+# Local inference (debiasing)
+vllm
+
+# Embedding experiments
+sentence-transformers
+scikit-learn
+
+# Knowledge injection evaluation
+rouge-score

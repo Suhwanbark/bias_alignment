@@ -1,0 +1,40 @@
+### model
+model_name_or_path: Qwen/Qwen3-30B-A3B-Instruct-2507
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+lora_target: qkv_proj,o_proj
+
+### dataset
+dataset: sft_v2
+dataset_dir: /data/llm-bias-in-finance/debias/llamafactory
+template: qwen3
+cutoff_len: 2048
+
+### train
+output_dir: /home/jovyan/models/qwen-sft-v2-lf
+num_train_epochs: 10.0
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-6
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+seed: 42
+logging_steps: 1
+save_steps: 1
+report_to: tensorboard
+
+### eval
+val_size: 0.1
+eval_strategy: steps
+eval_steps: 1
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+greater_is_better: false

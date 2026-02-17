@@ -1,0 +1,83 @@
+[2026-02-16 19:43:44] ══════════════════════════════════════════════════════════════
+[2026-02-16 19:43:44] BiasUnlearn 전체 파이프라인 시작
+[2026-02-16 19:43:44]   로그: /data/llm-bias-in-finance/debias/logs/pipeline_20260216_194344.log
+[2026-02-16 19:43:45] ══════════════════════════════════════════════════════════════
+[2026-02-16 19:43:45] 
+[2026-02-16 19:43:45] ═══ Step 1/4: Counterfactual Retain 생성 (vLLM offline) ═══
+[2026-02-16 19:43:45]   이미 존재: new_npo/data/qwen3-30b-a3b-instruct-2507/retain_counterfactual.jsonl (190 samples), 스킵
+[2026-02-16 19:43:45]   Counterfactual 완료: 190 samples
+[2026-02-16 19:43:45] 
+[2026-02-16 19:43:45] ═══ Step 2/4: Retain 데이터셋 재구성 (counterfactual 병합) ═══
+[1/5] Loading Phase 0 CSV: new_npo/bias_profiling/qwen3-30b-a3b-instruct-2507_att_combined.csv
+  Loaded 4270 rows, 427 tickers
+
+[2/5] Computing per-ticker bias scores
+  Threshold: |bias_score| > 80.0
+  고편향 종목: 19개
+    - Buy 편향: 18개
+    - Sell 편향: 1개
+  저편향 종목: 65개
+  중간: 343개
+
+[3/5] Building Forget Set (고편향 다수방향)
+  Forget: 190 samples
+
+[4/5] Building Retain Set (소수방향 + 저편향)
+  Retain: 647 samples
+    - 소수방향 (고편향 종목): 0
+    - 중립 (저편향 종목): 647
+  Merging 190 counterfactual samples into retain set
+    - Counterfactual: 190
+
+[5/5] Building Eval Mini Set
+  Eval Mini: 19 samples
+
+Writing to new_npo/data/qwen3-30b-a3b-instruct-2507/
+  -> new_npo/data/qwen3-30b-a3b-instruct-2507/forget.jsonl: 190 samples
+  -> new_npo/data/qwen3-30b-a3b-instruct-2507/retain.jsonl: 837 samples
+  -> new_npo/data/qwen3-30b-a3b-instruct-2507/eval_mini.jsonl: 19 samples
+  -> new_npo/data/qwen3-30b-a3b-instruct-2507/profile_report.json: profile report
+
+==================================================
+DATASET SUMMARY
+==================================================
+Model:          qwen3-30b-a3b-instruct-2507
+Threshold:      |bias_score| > 80.0
+고편향 종목:     19개 (buy 18, sell 1)
+저편향 종목:     65개
+
+Forget:         190 samples
+Retain:         837 samples (minority 0 + neutral 647)
+Eval Mini:      19 samples
+==================================================
+[2026-02-16 19:43:45]   Retain 재구성 완료: 837 samples
+[2026-02-16 19:43:45] 
+[2026-02-16 19:43:45] ═══ Step 3/4: Training Sweep (3 experiments) ═══
+[2026-02-16 19:43:45] 
+[2026-02-16 19:43:45]   ── Experiment 1/3: alpha_f=0.75, alpha_r=0.25 ──
+[2026-02-16 19:43:45]   Output: /home/jovyan/models/qwen-biasunlearn-a75r25
+19:43:48 [INFO] Config saved to /home/jovyan/models/qwen-biasunlearn-a75r25/train_config.json
+Loading checkpoint shards:   0%|                                                                                                                                                                                                                                             | 0/16 [00:00<?, ?it/s]Loading checkpoint shards:   6%|██████████████▎                                                                                                                                                                                                                      | 1/16 [00:00<00:13,  1.13it/s]Loading checkpoint shards:  12%|████████████████████████████▋                                                                                                                                                                                                        | 2/16 [00:01<00:13,  1.06it/s]Loading checkpoint shards:  19%|██████████████████████████████████████████▉                                                                                                                                                                                          | 3/16 [00:02<00:12,  1.04it/s]Loading checkpoint shards:  25%|█████████████████████████████████████████████████████████▎                                                                                                                                                                           | 4/16 [00:03<00:11,  1.04it/s]Loading checkpoint shards:  31%|███████████████████████████████████████████████████████████████████████▌                                                                                                                                                             | 5/16 [00:04<00:10,  1.05it/s]Loading checkpoint shards:  38%|█████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                               | 6/16 [00:05<00:09,  1.05it/s]Loading checkpoint shards:  44%|████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                | 7/16 [00:06<00:08,  1.03it/s]Loading checkpoint shards:  50%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                  | 8/16 [00:07<00:07,  1.03it/s]Loading checkpoint shards:  56%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                    | 9/16 [00:08<00:06,  1.03it/s]Loading checkpoint shards:  62%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                     | 10/16 [00:09<00:05,  1.05it/s]Loading checkpoint shards:  69%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                       | 11/16 [00:10<00:04,  1.05it/s]Loading checkpoint shards:  75%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                         | 12/16 [00:11<00:03,  1.03it/s]Loading checkpoint shards:  81%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                          | 13/16 [00:12<00:02,  1.06it/s]Loading checkpoint shards:  88%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                            | 14/16 [00:13<00:01,  1.07it/s]Loading checkpoint shards:  94%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊              | 15/16 [00:14<00:00,  1.09it/s]Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:14<00:00,  1.32it/s]Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:14<00:00,  1.10it/s]
+19:44:14 [INFO] Loaded 190 samples from /data/llm-bias-in-finance/new_npo/data/qwen3-30b-a3b-instruct-2507/forget.jsonl
+19:44:14 [INFO] Loaded 837 samples from /data/llm-bias-in-finance/new_npo/data/qwen3-30b-a3b-instruct-2507/retain.jsonl
+19:44:14 [INFO] DataLoaders: forget=190 samples (bs=4), retain=837 samples (bs=28), kl=disabled
+19:44:14 [INFO] Loss mode: NPO+CE (alpha_f=0.75, alpha_r=0.25, alpha_kl=0.20)
+19:44:14 [INFO] Loaded 19 high-bias tickers for swap/early-stop monitoring
+19:44:14 [INFO] Starting training [NPO+CE] (beta=0.10, lr=2.0e-05, max_steps=1000, forget_bs=4, retain_bs=28)
+trainable params: 6,684,672 || all params: 30,538,807,296 || trainable%: 0.0219
+NPO NPO+CE:   0%|                                                                                                                                                                                                                                                        | 0/1000 [00:00<?, ?step/s]NPO NPO+CE:   0%|▏                                                                                                                                                                                                                                           | 1/1000 [01:58<32:49:46, 118.31s/step]NPO NPO+CE:   0%|▏                                                                                                                                                                                       | 1/1000 [01:58<32:49:46, 118.31s/step, loss=10.4237, L_f=13.8125, L_r=0.1949, lr=2.00e-06]NPO NPO+CE:   0%|▎                                                                                                                                                                                        | 2/1000 [02:09<15:17:40, 55.17s/step, loss=10.4237, L_f=13.8125, L_r=0.1949, lr=2.00e-06]NPO NPO+CE:   0%|▎                                                                                                                                                                                        | 2/1000 [02:09<15:17:40, 55.17s/step, loss=10.4166, L_f=13.8125, L_r=0.1663, lr=4.00e-06]Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/llm-bias-in-finance/new_npo/src/train.py", line 380, in <module>
+    main()
+  File "/data/llm-bias-in-finance/new_npo/src/train.py", line 307, in main
+    (loss / config.grad_accum).backward()
+  File "/opt/conda/lib/python3.11/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "/opt/conda/lib/python3.11/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/opt/conda/lib/python3.11/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 8.12 GiB. GPU 1 has a total capacity of 139.81 GiB of which 3.09 GiB is free. Process 3634063 has 136.71 GiB memory in use. Of the allocated memory 127.58 GiB is allocated by PyTorch, and 8.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+NPO NPO+CE:   0%|▎                                                                                                                                                                                        | 2/1000 [02:15<18:47:23, 67.78s/step, loss=10.4166, L_f=13.8125, L_r=0.1663, lr=4.00e-06]

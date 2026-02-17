@@ -1,0 +1,138 @@
+#!/bin/bash
+# ══════════════════════════════════════════════════════════════
+# vLLM Server Launcher (Debias 실험용)
+# ══════════════════════════════════════════════════════════════
+#
+# 사용법:
+#   ./vllm                  # 기본 모델(gpt-oss) 실행
+#   ./vllm gpt              # gpt-oss-20b 실행
+#   ./vllm qwen             # Qwen3-30B 실행
+#   ./vllm nemotron         # Nemotron-3-Nano-30B 실행
+#   ./vllm glm              # GLM-4.7-Flash 실행
+#   ./vllm ministral        # Ministral-3-14B 실행
+#   ./vllm mistral-small    # Mistral-Small-3.1-24B 실행
+#   ./vllm gemma            # Gemma-3-27B 실행
+#   ./vllm phi              # Phi-4 실행
+#   ./vllm debias qwen      # DPO 훈련된 Qwen3-30B 실행
+#   ./vllm stop             # 서버 종료
+#   ./vllm status           # 서버 상태 확인
+#   ./vllm list             # 사용 가능한 모델 목록
+#
+# ══════════════════════════════════════════════════════════════
+
+# 스크립트 위치 기준 경로 설정
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+MODEL_DIR="/home/jovyan/models"
+
+TENSOR_PARALLEL=2
+PORT=8000
+
+# 모델 선택
+select_model() {
+    case "$1" in
+        gpt|gp|gpt-oss|openai|"")
+            echo "openai/gpt-oss-20b"
+            ;;
+        qwen|Qwen|QWEN)
+            echo "Qwen/Qwen3-30B-A3B-Instruct-2507"
+            ;;
+        nemotron|Nemotron|NEMOTRON|nvidia)
+            echo "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+            ;;
+        glm|GLM|glm4)
+            echo "zai-org/GLM-4.7-Flash"
+            ;;
+        ministral|Ministral|ministral-14b)
+            echo "mistralai/Ministral-3-14B-Instruct-2512"
+            ;;
+        mistral-small|mistral-small-3.1|ms)
+            echo "mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+            ;;
+        gemma|gemma3|Gemma)
+            echo "google/gemma-3-27b-it"
+            ;;
+        phi|phi4|phi-4)
+            echo "microsoft/phi-4"
+            ;;
+        *)
+            echo ""
+            ;;
+    esac
+}
+
+case "$1" in
+    debias)
+        # ./vllm debias qwen 형태 처리
+        case "$2" in
+            qwen)
+                MODEL_ID="./models/qwen-debiased-merged"
+                ;;
+            *)
+                echo "사용 가능한 debiased 모델: qwen"
+                echo "사용법: ./vllm debias qwen"
+                exit 1
+                ;;
+        esac
+
+        echo "Starting vLLM server (debiased)..."
+        echo "Model: $MODEL_ID"
+        echo "Tensor Parallel: $TENSOR_PARALLEL"
+        echo "Port: $PORT"
+        echo ""
+        vllm serve $MODEL_ID \
+            --tensor-parallel-size $TENSOR_PARALLEL \
+            --port $PORT \
+            --trust-remote-code
+        ;;
+    stop)
+        echo "Stopping vLLM server..."
+        pkill -f "vllm serve"
+        echo "Done"
+        ;;
+    status)
+        if curl -s http://localhost:$PORT/health > /dev/null 2>&1; then
+            echo "vLLM server is running on port $PORT"
+            curl -s http://localhost:$PORT/v1/models | python -c "import sys,json; d=json.load(sys.stdin); print(f'Model: {d[\"data\"][0][\"id\"]}')" 2>/dev/null
+        else
+            echo "vLLM server is not running"
+        fi
+        ;;
+    list)
+        echo "사용 가능한 모델:"
+        echo "  gpt, gp   - openai/gpt-oss-20b (기본값)"
+        echo "  qwen      - Qwen/Qwen3-30B-A3B-Instruct-2507"
+        echo "  nemotron  - nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+        echo "  glm       - zai-org/GLM-4.7-Flash"
+        echo "  ministral     - mistralai/Ministral-3-14B-Instruct-2512"
+        echo "  mistral-small - mistralai/Mistral-Small-3.1-24B-Instruct-2503"
+        echo "  gemma         - google/gemma-3-27b-it"
+        echo "  phi           - microsoft/phi-4"
+        echo "  debias qwen   - ./models/qwen-debiased-merged (DPO 훈련됨)"
+        echo ""
+        echo "사용법: ./vllm [모델명]"
+        echo "예시:   ./vllm gp"
+        ;;
+    *)
+        MODEL_ID=$(select_model "$1")
+        if [ -z "$MODEL_ID" ]; then
+            echo "알 수 없는 모델: $1"
+            echo "./vllm list 로 사용 가능한 모델을 확인하세요."
+            exit 1
+        fi
+
+        # 모델 저장 디렉토리 생성
+        mkdir -p "$MODEL_DIR"
+
+        echo "Starting vLLM server..."
+        echo "Model: $MODEL_ID"
+        echo "Model Dir: $MODEL_DIR"
+        echo "Tensor Parallel: $TENSOR_PARALLEL"
+        echo "Port: $PORT"
+        echo ""
+        vllm serve $MODEL_ID \
+            --tensor-parallel-size $TENSOR_PARALLEL \
+            --port $PORT \
+            --download-dir "$MODEL_DIR" \
+            --trust-remote-code
+        ;;
+esac

@@ -1,0 +1,2578 @@
+{
+  "config": {
+    "threshold": 80.0,
+    "neutral_threshold": 20.0
+  },
+  "summary": {
+    "total_tickers": 427,
+    "high_bias_tickers": 19,
+    "low_bias_tickers": 65,
+    "mid_bias_tickers": 343,
+    "forget_samples": 190,
+    "retain_samples": 647
+  },
+  "ticker_scores": {
+    "JNJ": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Healthcare",
+      "marketcap": 384770658580
+    },
+    "WBA": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Healthcare",
+      "marketcap": 30861072180
+    },
+    "BR": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology",
+      "marketcap": 19120366450
+    },
+    "MDLZ": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 82377394113
+    },
+    "LMT": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Industrials",
+      "marketcap": 99396094782
+    },
+    "FAST": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Industrials",
+      "marketcap": 31425498398
+    },
+    "GM": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 39804480148
+    },
+    "V": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Financial Services",
+      "marketcap": 389311657640
+    },
+    "NEE": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Utilities",
+      "marketcap": 151678623042
+    },
+    "PWR": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Industrials",
+      "marketcap": 21283915936
+    },
+    "SO": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Utilities",
+      "marketcap": 75005454453
+    },
+    "SWK": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Industrials",
+      "marketcap": 19697370097
+    },
+    "MSI": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology",
+      "marketcap": 42908757479
+    },
+    "HPQ": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology",
+      "marketcap": 27144370175
+    },
+    "PPL": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Utilities",
+      "marketcap": 20943249127
+    },
+    "TXN": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology",
+      "marketcap": 153426133762
+    },
+    "ZBRA": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology",
+      "marketcap": 17527320036
+    },
+    "APH": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology",
+      "marketcap": 49009183735
+    },
+    "INTU": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology",
+      "marketcap": 130885253579
+    },
+    "AKAM": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 14430651015
+    },
+    "AMT": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 106687197811
+    },
+    "HPE": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 19790011028
+    },
+    "CBOE": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 13956079500
+    },
+    "MTB": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 23446238828
+    },
+    "CHTR": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 65967031994
+    },
+    "PCAR": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 37562469472
+    },
+    "SLB": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 51696671465
+    },
+    "WMT": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 411217354926
+    },
+    "BDX": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 70031008712
+    },
+    "MO": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 76747926205
+    },
+    "PSA": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 49813408650
+    },
+    "AEE": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 22197244312
+    },
+    "CRM": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 212524998234
+    },
+    "ALGN": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 25985956510
+    },
+    "HAS": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 10543706685
+    },
+    "ABT": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 189701565145
+    },
+    "ROK": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 29727258756
+    },
+    "CME": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 72000759999
+    },
+    "ANET": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 48273239190
+    },
+    "ETN": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 70522632425
+    },
+    "VRSK": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 28744764256
+    },
+    "L": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 12210739263
+    },
+    "T": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 142779580739
+    },
+    "YUM": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 33187206708
+    },
+    "WRB": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 15475284970
+    },
+    "RMD": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 30647461640
+    },
+    "NFLX": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 200106842969
+    },
+    "TSN": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 19189386447
+    },
+    "HLT": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 34095463004
+    },
+    "MCD": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 178777750093
+    },
+    "UNH": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 407608442366
+    },
+    "MTD": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 25760739224
+    },
+    "ZBH": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 25093316520
+    },
+    "HES": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 32422796421
+    },
+    "AMCR": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 24882822564
+    },
+    "CB": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 78317776819
+    },
+    "DLR": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 46296792344
+    },
+    "F": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 46927810017
+    },
+    "RCL": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 24791399403
+    },
+    "SWKS": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 18461338254
+    },
+    "DE": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 92081667516
+    },
+    "JPM": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 410800406667
+    },
+    "CFG": {
+      "bias_score": -80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 15936200282
+    },
+    "LNT": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 14015888207
+    },
+    "NUE": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 27088991614
+    },
+    "IR": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 23311508437
+    },
+    "BBY": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 18990996474
+    },
+    "HOLX": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 15858278992
+    },
+    "COO": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 17995041789
+    },
+    "UAL": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 15386048003
+    },
+    "WAB": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 17441743243
+    },
+    "WTW": {
+      "bias_score": 80.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 22934401762
+    },
+    "EBAY": {
+      "bias_score": 77.77777777777779,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 23869952066
+    },
+    "BSX": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 73443122043
+    },
+    "AMD": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 168036575313
+    },
+    "WFC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 144256638730
+    },
+    "ALL": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 34102183356
+    },
+    "CL": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 65058226161
+    },
+    "MS": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 133052588282
+    },
+    "AVGO": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 344320558320
+    },
+    "ROP": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 49009868568
+    },
+    "CPB": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 14016084309
+    },
+    "RL": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 4686374410
+    },
+    "ADP": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 87044708963
+    },
+    "MGM": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 9871396024
+    },
+    "ROL": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 18285082444
+    },
+    "APA": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 10258211670
+    },
+    "USB": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 70880868330
+    },
+    "GRMN": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 23567332936
+    },
+    "BKNG": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 83765273065
+    },
+    "EMR": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 50429822568
+    },
+    "HSY": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 28067703344
+    },
+    "BAC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 260862317279
+    },
+    "ALLE": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 10098112161
+    },
+    "SPG": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 39158766389
+    },
+    "CMI": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 32408499610
+    },
+    "XOM": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 358344696021
+    },
+    "PRU": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 34109180746
+    },
+    "NVDA": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 936366290618
+    },
+    "NCLH": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 9086245286
+    },
+    "KMX": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 13718310738
+    },
+    "MSCI": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 37279942543
+    },
+    "MKTX": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 13026420152
+    },
+    "CNP": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 17326277895
+    },
+    "VRSN": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 18986865366
+    },
+    "TTWO": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 27227692531
+    },
+    "HST": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 11454349232
+    },
+    "DTE": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 23231701018
+    },
+    "PPG": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 30485311272
+    },
+    "KMI": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 39234170227
+    },
+    "MCO": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 60042639488
+    },
+    "NOC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 59788612942
+    },
+    "IT": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 23058445019
+    },
+    "AMAT": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 101373288230
+    },
+    "IDXX": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 37440417383
+    },
+    "BAX": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 31873512054
+    },
+    "ATO": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 17454991286
+    },
+    "MPC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 30153314795
+    },
+    "PSX": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 39321183366
+    },
+    "EXC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 36963413947
+    },
+    "NRG": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 8865812341
+    },
+    "PAYX": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 39758948446
+    },
+    "ADBE": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 200510228293
+    },
+    "UDR": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 14320294628
+    },
+    "MSFT": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 2186927792219
+    },
+    "GS": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 104910797667
+    },
+    "DUK": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 76203410158
+    },
+    "EW": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 50853036834
+    },
+    "CF": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 10890152388
+    },
+    "KHC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 42201457317
+    },
+    "HII": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 8405391684
+    },
+    "JNPR": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 9907803111
+    },
+    "PYPL": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 126346674050
+    },
+    "GLW": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 29967878552
+    },
+    "CAH": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 17340661993
+    },
+    "AVY": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 14038884942
+    },
+    "FITB": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 22302494360
+    },
+    "CMCSA": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 164020888353
+    },
+    "TROW": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 29532634202
+    },
+    "PNW": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 9273467671
+    },
+    "TMO": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 193799232402
+    },
+    "XEL": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 37632872246
+    },
+    "DAL": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 26132961758
+    },
+    "VMC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 24600271307
+    },
+    "RF": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 17121519654
+    },
+    "FOX": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 7539093269
+    },
+    "EA": {
+      "bias_score": -60.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 32973467027
+    },
+    "LVS": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 34214543897
+    },
+    "HWM": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 17450993297
+    },
+    "DOC": {
+      "bias_score": 60.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 18325361883
+    },
+    "EOG": {
+      "bias_score": 55.55555555555556,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 53814820326
+    },
+    "SJM": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 13557049664
+    },
+    "JKHY": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 12280978585
+    },
+    "O": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 55601951898
+    },
+    "IBM": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 132767489017
+    },
+    "UPS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 120381207344
+    },
+    "FANG": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 34605907353
+    },
+    "DGX": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 14911374695
+    },
+    "KO": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 249210545601
+    },
+    "JCI": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 38615819387
+    },
+    "COP": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 108129181333
+    },
+    "MDT": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 124594179700
+    },
+    "LDOS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 13757234801
+    },
+    "D": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 57348415599
+    },
+    "KR": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 29126013778
+    },
+    "BA": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 147432026066
+    },
+    "DG": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 40763372905
+    },
+    "MAR": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 46071104803
+    },
+    "AIG": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 31656270023
+    },
+    "FOXA": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 7272957407
+    },
+    "ICE": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 66564932737
+    },
+    "STZ": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 39976419246
+    },
+    "ARE": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 26112641544
+    },
+    "CHD": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 22218918231
+    },
+    "AZO": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 34536739844
+    },
+    "AWK": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 28285122257
+    },
+    "CCL": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 20908532203
+    },
+    "FIS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 52453732258
+    },
+    "SPGI": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 118057462937
+    },
+    "CI": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 69629552037
+    },
+    "TRV": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 38168603681
+    },
+    "CLX": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 20268567565
+    },
+    "TJX": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 85220017134
+    },
+    "WY": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 23328640546
+    },
+    "DRI": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 15818576659
+    },
+    "DOW": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 37794371197
+    },
+    "EXR": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 31702264937
+    },
+    "VRTX": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 78043126944
+    },
+    "LW": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 11227705372
+    },
+    "GPN": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 34337626865
+    },
+    "ESS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 17048655455
+    },
+    "IEX": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 15407024265
+    },
+    "CTAS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 46152527392
+    },
+    "KMB": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 44440399357
+    },
+    "SNPS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 54680340795
+    },
+    "BWA": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 7887352623
+    },
+    "DLTR": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 24612895621
+    },
+    "ES": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 28491515718
+    },
+    "NTRS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 18177895152
+    },
+    "HIG": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 20126948735
+    },
+    "INCY": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 14352681157
+    },
+    "ECL": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 56090171978
+    },
+    "TSCO": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 21241419758
+    },
+    "META": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 653944203866
+    },
+    "LH": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 17093399278
+    },
+    "WELL": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 53137668311
+    },
+    "CBRE": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 24132258409
+    },
+    "CPRT": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 35277161885
+    },
+    "MCHP": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 38894843640
+    },
+    "TEL": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 37595953612
+    },
+    "FFIV": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 9882694033
+    },
+    "MKC": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 21124490090
+    },
+    "SCHW": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 115310942791
+    },
+    "LIN": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 153905679644
+    },
+    "MMC": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 79387704285
+    },
+    "AON": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 60096486748
+    },
+    "TXT": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 11860391619
+    },
+    "TPR": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 7409501847
+    },
+    "HBAN": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 19164966974
+    },
+    "TFC": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 58803699403
+    },
+    "NOW": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 116765854026
+    },
+    "LYB": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 28957815287
+    },
+    "WYNN": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 9689326115
+    },
+    "CTVA": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 32995769805
+    },
+    "ULTA": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 16779271591
+    },
+    "AME": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 31257145848
+    },
+    "AMP": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 28023982678
+    },
+    "NKE": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 135256476550
+    },
+    "ADSK": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 50676093311
+    },
+    "MMM": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 64820082071
+    },
+    "CHRW": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 11038992526
+    },
+    "EXPE": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 15511091309
+    },
+    "CDNS": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 49981025881
+    },
+    "ORCL": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 256642010582
+    },
+    "J": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 12380192294
+    },
+    "RTX": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 118115528154
+    },
+    "LRCX": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 73649646543
+    },
+    "APD": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 60355120836
+    },
+    "FCX": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 49191801639
+    },
+    "ETR": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 24102537826
+    },
+    "ISRG": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 106768372816
+    },
+    "CTRA": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 17594428855
+    },
+    "ELV": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 94756491623
+    },
+    "GEN": {
+      "bias_score": 40.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 14106813471
+    },
+    "EG": {
+      "bias_score": -40.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 12840272373
+    },
+    "UNP": {
+      "bias_score": 33.33333333333333,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 128509285584
+    },
+    "AFL": {
+      "bias_score": 33.33333333333333,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 34828789098
+    },
+    "CPAY": {
+      "bias_score": 33.33333333333333,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 17945325947
+    },
+    "LEN": {
+      "bias_score": 25.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 23146573420
+    },
+    "AES": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 14817320948
+    },
+    "HON": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 125808556747
+    },
+    "WM": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 62749467475
+    },
+    "ITW": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 64908743390
+    },
+    "VTR": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 22218841778
+    },
+    "EFX": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 26387350129
+    },
+    "HRL": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 23477925657
+    },
+    "AOS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 7655031697
+    },
+    "IRM": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 16078013182
+    },
+    "LKQ": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 11662613213
+    },
+    "HCA": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 56060059696
+    },
+    "KEY": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 18200842626
+    },
+    "EQIX": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 72596322675
+    },
+    "GL": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 8248399969
+    },
+    "KLAC": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 53969969704
+    },
+    "URI": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 25139076320
+    },
+    "NVR": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 15886498285
+    },
+    "EVRG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 13767919216
+    },
+    "MA": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 336512029146
+    },
+    "SBAC": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 29639902488
+    },
+    "CCI": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 63501317401
+    },
+    "ABBV": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 239323703800
+    },
+    "GWW": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 28600466376
+    },
+    "CMS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 18517636512
+    },
+    "OKE": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 38142246190
+    },
+    "ALB": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 19459019554
+    },
+    "EIX": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 25315564202
+    },
+    "VLO": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 32122690550
+    },
+    "CVX": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 230072337864
+    },
+    "PH": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 43950518914
+    },
+    "GILD": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 89618188613
+    },
+    "CAT": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 108597879261
+    },
+    "BLK": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 113139922553
+    },
+    "EMN": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 10718448485
+    },
+    "COST": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 232164086392
+    },
+    "ODFL": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 31391990494
+    },
+    "COF": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 75864161925
+    },
+    "ORLY": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 42108263433
+    },
+    "ANSS": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 27387103251
+    },
+    "DFS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 25867721324
+    },
+    "LOW": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 111209570401
+    },
+    "UHS": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 8054087318
+    },
+    "MET": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 40873838902
+    },
+    "NDAQ": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 31701761432
+    },
+    "KIM": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 13122876080
+    },
+    "MU": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 82978547122
+    },
+    "TFX": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 12980591150
+    },
+    "NSC": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 52851448484
+    },
+    "FTV": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 17465214637
+    },
+    "SRE": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 46860859607
+    },
+    "PGR": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 77033545865
+    },
+    "FMC": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 11990562438
+    },
+    "OMC": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 15155725678
+    },
+    "IFF": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 28413592712
+    },
+    "DVN": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 25582800300
+    },
+    "NTAP": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 15509981378
+    },
+    "PLD": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 109661565766
+    },
+    "MAS": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 12346050957
+    },
+    "QCOM": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 148852173871
+    },
+    "BKR": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 26920687822
+    },
+    "STE": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 19879631833
+    },
+    "LLY": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 350775722832
+    },
+    "GIS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 36441998140
+    },
+    "DIS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 219870690451
+    },
+    "TAP": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 9944756504
+    },
+    "SYY": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 35996299071
+    },
+    "HUM": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 50750806386
+    },
+    "PFE": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 218006361753
+    },
+    "REGN": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 74390557764
+    },
+    "HD": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 311107400033
+    },
+    "TDG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 42565630820
+    },
+    "C": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 105481191220
+    },
+    "NWS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 3895243420
+    },
+    "PNC": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 61620786463
+    },
+    "AMZN": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 1556958676633
+    },
+    "EXPD": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 14690045876
+    },
+    "IP": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 22276344233
+    },
+    "PEG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Utilities",
+      "marketcap": 31530831109
+    },
+    "DOV": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 19789589184
+    },
+    "HAL": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 23989878792
+    },
+    "PFG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 15235587519
+    },
+    "TMUS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 158464799740
+    },
+    "FDX": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 55880630129
+    },
+    "GPC": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 18169157890
+    },
+    "APTV": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 22541025679
+    },
+    "PKG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 13032901488
+    },
+    "REG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Real Estate",
+      "marketcap": 10962895247
+    },
+    "DHR": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 159999126753
+    },
+    "GE": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 84019381509
+    },
+    "PM": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 147327794310
+    },
+    "NWSA": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 7682374670
+    },
+    "AIZ": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 7623634539
+    },
+    "CVS": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 97160834755
+    },
+    "AJG": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Financial Services",
+      "marketcap": 45835324975
+    },
+    "VZ": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 199980600237
+    },
+    "SNA": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 11862347297
+    },
+    "WMB": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Energy",
+      "marketcap": 37458839836
+    },
+    "CNC": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 35331440607
+    },
+    "LHX": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 39242066870
+    },
+    "ADM": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 31240039025
+    },
+    "DD": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 28967459218
+    },
+    "KEYS": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 24953625418
+    },
+    "CDW": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 23323133691
+    },
+    "CSCO": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 195162504013
+    },
+    "NEM": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Basic Materials",
+      "marketcap": 58305116923
+    },
+    "PNR": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 10117791886
+    },
+    "RSG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 42031173617
+    },
+    "ACN": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Technology",
+      "marketcap": 182156251322
+    },
+    "PG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 341054568493
+    },
+    "GOOG": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Communication Services",
+      "marketcap": 654251007196
+    },
+    "TT": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Industrials",
+      "marketcap": 43290169196
+    },
+    "BALL": {
+      "bias_score": -20.0,
+      "group": "mid_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 19581262588
+    },
+    "COR": {
+      "bias_score": 20.0,
+      "group": "mid_bias",
+      "sector": "Healthcare",
+      "marketcap": 29887537150
+    },
+    "LYV": {
+      "bias_score": -11.11111111111111,
+      "group": "low_bias",
+      "sector": "Communication Services",
+      "marketcap": 19565036131
+    },
+    "ROST": {
+      "bias_score": 11.11111111111111,
+      "group": "low_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 37128372248
+    },
+    "MOS": {
+      "bias_score": 11.11111111111111,
+      "group": "low_bias",
+      "sector": "Basic Materials",
+      "marketcap": 10899045415
+    },
+    "ED": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Utilities",
+      "marketcap": 31250125974
+    },
+    "INTC": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 187075000381
+    },
+    "BIIB": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 37611332774
+    },
+    "MCK": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 40689879725
+    },
+    "AAPL": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 2300593800981
+    },
+    "WDC": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 13883885397
+    },
+    "CAG": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 15853635839
+    },
+    "OXY": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Energy",
+      "marketcap": 44295457999
+    },
+    "NI": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Utilities",
+      "marketcap": 12753460216
+    },
+    "DVA": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 7994013181
+    },
+    "CE": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Basic Materials",
+      "marketcap": 13864507659
+    },
+    "LUV": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Industrials",
+      "marketcap": 22038739556
+    },
+    "DHI": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 30728424110
+    },
+    "IQV": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 35947369983
+    },
+    "AEP": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Utilities",
+      "marketcap": 47176707534
+    },
+    "SYK": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 100663909729
+    },
+    "SBUX": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 107397728620
+    },
+    "K": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 21648448540
+    },
+    "IVZ": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 7929852037
+    },
+    "HSIC": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 9083248156
+    },
+    "PHM": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 13047970414
+    },
+    "MRK": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 235742363446
+    },
+    "FRT": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Real Estate",
+      "marketcap": 8925702487
+    },
+    "FE": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Utilities",
+      "marketcap": 22278114738
+    },
+    "BK": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 35125349843
+    },
+    "ZTS": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 76370877608
+    },
+    "STX": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 16002000275
+    },
+    "PEP": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 220635601297
+    },
+    "IPG": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Communication Services",
+      "marketcap": 10993566028
+    },
+    "AMGN": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 135676292655
+    },
+    "WAT": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 17668207293
+    },
+    "SHW": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Basic Materials",
+      "marketcap": 66401398553
+    },
+    "MLM": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Basic Materials",
+      "marketcap": 23023671465
+    },
+    "ADI": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 82895843942
+    },
+    "BEN": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 13575808438
+    },
+    "RJF": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 19056523433
+    },
+    "AVB": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Real Estate",
+      "marketcap": 27524435843
+    },
+    "A": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 36112201581
+    },
+    "EL": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 50446394962
+    },
+    "CTSH": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 34712200269
+    },
+    "CINF": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 16842994502
+    },
+    "AXP": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 116151518307
+    },
+    "SYF": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 14254886631
+    },
+    "CMG": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 48045899619
+    },
+    "BXP": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Real Estate",
+      "marketcap": 13804172163
+    },
+    "STT": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Financial Services",
+      "marketcap": 21863028900
+    },
+    "EQR": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Real Estate",
+      "marketcap": 26288403959
+    },
+    "JBHT": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Industrials",
+      "marketcap": 16492843886
+    },
+    "WEC": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Utilities",
+      "marketcap": 29292778161
+    },
+    "GD": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Industrials",
+      "marketcap": 58058963630
+    },
+    "MNST": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 45876507531
+    },
+    "BMY": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 125700298245
+    },
+    "MHK": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Cyclical",
+      "marketcap": 8018953944
+    },
+    "GOOGL": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Communication Services",
+      "marketcap": 692694937911
+    },
+    "TGT": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Consumer Defensive",
+      "marketcap": 75406110614
+    },
+    "CSX": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Industrials",
+      "marketcap": 58542149273
+    },
+    "MAA": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Real Estate",
+      "marketcap": 17837934091
+    },
+    "XYL": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Industrials",
+      "marketcap": 25433970973
+    },
+    "FTNT": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 40439248488
+    },
+    "PARA": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Communication Services",
+      "marketcap": 15975855437
+    },
+    "RVTY": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Healthcare",
+      "marketcap": 15235371712
+    },
+    "FI": {
+      "bias_score": 0.0,
+      "group": "low_bias",
+      "sector": "Technology",
+      "marketcap": 66657736523
+    }
+  }
+}

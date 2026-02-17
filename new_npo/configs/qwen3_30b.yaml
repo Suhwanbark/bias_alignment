@@ -1,0 +1,41 @@
+model:
+  name: Qwen/Qwen3-30B-A3B-Instruct-2507
+  max_length: 1024
+
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.1
+  target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+training:
+  lr: 5e-5
+  beta: 10.0
+  max_steps: 300
+  save_steps: 50
+  eval_steps: 50
+  warmup_steps: 10
+  grad_accum: 1
+  max_grad_norm: 1.0
+  weight_decay: 0.01
+  seed: 42
+
+loss_weights:
+  alpha_forget: 0.4
+  alpha_retain: 0.4
+  alpha_kl: 0.2            # KL 데이터 없으면 무시됨
+
+batch_sizes:
+  forget: 4
+  retain: 8
+  kl: 2
+
+data:
+  forget: data/qwen3-30b-a3b-instruct-2507/forget.jsonl
+  retain: data/qwen3-30b-a3b-instruct-2507/retain.jsonl
+  kl: null                  # KL 데이터 미확보 — null이면 NPO+CE 2-loss 모드
+  eval_mini: data/qwen3-30b-a3b-instruct-2507/eval_mini.jsonl
+  profile_report: data/qwen3-30b-a3b-instruct-2507/profile_report.json
+
+output_dir: results/qwen3-30b-a3b-instruct-2507
+tensor_parallel: 2

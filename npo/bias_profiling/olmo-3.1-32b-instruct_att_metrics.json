@@ -1,0 +1,15 @@
+{
+  "model": "olmo-3.1-32b-instruct",
+  "reasoning_effort": null,
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.6222,
+  "average_cost_per_set_usd": 0.6222,
+  "total_input_tokens": 2173083,
+  "total_output_tokens": 312595,
+  "total_tokens": 2485678,
+  "total_time_seconds": 267.05,
+  "average_time_per_set_seconds": 267.05,
+  "average_latency_seconds": 3.1,
+  "average_ttft_seconds": 2.92
+}

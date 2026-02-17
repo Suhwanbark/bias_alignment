@@ -1,0 +1,35 @@
+# Environment & IDE
+.env
+.DS_Store
+.vscode/
+.claude/
+
+# Python
+__pycache__/
+**/__pycache__/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.lock
+
+# Model weights & large binaries
+models/
+debias/models/
+legacy/
+*.pt
+*.bin
+*.npy
+*.safetensors
+*.gguf
+
+# External frameworks (install via pip)
+LLaMA-Factory/
+
+# Legacy / deprecated
+exp_result
+example_google.py
+llm_clients_internal_code.py
+backup
+/test/
+
+# Archives
+npo.zip
