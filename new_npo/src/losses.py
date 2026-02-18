@@ -24,8 +24,8 @@ def get_batch_loss(logits: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
     Returns:
         Tensor of shape (batch_size,) with per-sequence losses.
     """
-    # Shift for next-token prediction (float32 for NPO precision)
-    shift_logits = logits[:, :-1, :].contiguous().float()
+    # Shift for next-token prediction
+    shift_logits = logits[:, :-1, :].contiguous()
     shift_labels = labels[:, 1:].contiguous()
 
     # Per-token CE loss (no reduction)
@@ -37,10 +37,9 @@ def get_batch_loss(logits: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
     )
     loss_per_token = loss_per_token.view(shift_labels.size())
 
-    # Mean over valid tokens per sequence (matching BiasUnlearn original)
+    # Sum over valid tokens per sequence (correct log-likelihood for NPO)
     valid_mask = shift_labels != -100
-    valid_count = valid_mask.sum(dim=1).clamp(min=1)
-    loss_per_seq = (loss_per_token * valid_mask).sum(dim=1) / valid_count
+    loss_per_seq = (loss_per_token * valid_mask).sum(dim=1)
 
     return loss_per_seq
 

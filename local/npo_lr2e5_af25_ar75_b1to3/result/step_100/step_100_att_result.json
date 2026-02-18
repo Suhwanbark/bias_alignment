@@ -1,0 +1,7 @@
+{
+  "bias_index": 81,
+  "step": 100,
+  "checkpoint": "/data/llm-bias-in-finance/new_npo/new_npo/results/lr2e5_af25_ar75_b1to3/checkpoint-100",
+  "num_tickers": 427,
+  "num_prompts": 4270
+}
