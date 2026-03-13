@@ -1,0 +1,4 @@
+12:00:50 [INFO] Config saved to models/adapters/npo_scenario_4b_v2/train_config.json
+12:00:50 [INFO] Loading tokenizer: Qwen/Qwen3-4B-Instruct-2507
+12:00:52 [INFO] Loading model: Qwen/Qwen3-4B-Instruct-2507
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]

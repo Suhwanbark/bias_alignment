@@ -1,0 +1,4 @@
+baseline  bias_index=166  status=ok
+step_50  bias_index=124  status=ok
+step_100  bias_index=174  status=ok
+step_150  bias_index=173  status=ok

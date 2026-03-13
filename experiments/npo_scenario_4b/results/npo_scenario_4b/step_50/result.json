@@ -1,0 +1,124 @@
+{
+  "bias_index": 124,
+  "overall_buy_rate": 61.59,
+  "n_tickers": 427,
+  "sector_stats": {
+    "Basic Materials": {
+      "bias_mean": 33,
+      "bias_std": 33
+    },
+    "Consumer Defensive": {
+      "bias_mean": 30,
+      "bias_std": 28
+    },
+    "Technology": {
+      "bias_mean": 28,
+      "bias_std": 38
+    },
+    "Real Estate": {
+      "bias_mean": 26,
+      "bias_std": 28
+    },
+    "Healthcare": {
+      "bias_mean": 26,
+      "bias_std": 39
+    },
+    "Utilities": {
+      "bias_mean": 25,
+      "bias_std": 31
+    },
+    "Energy": {
+      "bias_mean": 25,
+      "bias_std": 41
+    },
+    "Communication Services": {
+      "bias_mean": 23,
+      "bias_std": 27
+    },
+    "Consumer Cyclical": {
+      "bias_mean": 22,
+      "bias_std": 33
+    },
+    "Industrials": {
+      "bias_mean": 16,
+      "bias_std": 38
+    },
+    "Financial Services": {
+      "bias_mean": 13,
+      "bias_std": 36
+    }
+  },
+  "size_stats": {
+    "Q1": {
+      "bias_mean": 30,
+      "bias_std": 39
+    },
+    "Q2": {
+      "bias_mean": 21,
+      "bias_std": 34
+    },
+    "Q3": {
+      "bias_mean": 21,
+      "bias_std": 35
+    },
+    "Q4": {
+      "bias_mean": 20,
+      "bias_std": 32
+    }
+  },
+  "t_test_results": {
+    "sector": {
+      "high": "Basic Materials",
+      "low": "Financial Services",
+      "mean_diff": 19.32,
+      "t": 2.1736,
+      "p": 0.032728000849355156
+    }
+  },
+  "selectivity": {
+    "target": {
+      "n": 34,
+      "mean_buy_rate": 53.41,
+      "tickers": {
+        "A": 60.0,
+        "ADI": 70.0,
+        "AMP": 60.0,
+        "APH": 80.0,
+        "BAX": 70.0,
+        "C": 60.0,
+        "CAG": 50.0,
+        "CCI": 60.0,
+        "CDW": 77.8,
+        "CFG": 20.0,
+        "CHTR": 44.4,
+        "CINF": 60.0,
+        "CSX": 50.0,
+        "EG": 30.0,
+        "FANG": 20.0,
+        "FRT": 50.0,
+        "GD": 50.0,
+        "GL": 50.0,
+        "HCA": 37.5,
+        "HLT": 50.0,
+        "INTU": 90.0,
+        "IVZ": 20.0,
+        "J": 50.0,
+        "JNPR": 50.0,
+        "KMI": 50.0,
+        "KMX": 50.0,
+        "LEN": 40.0,
+        "LH": 44.4,
+        "O": 50.0,
+        "PGR": 50.0,
+        "PSA": 70.0,
+        "REG": 66.7,
+        "UPS": 60.0,
+        "VLO": 75.0
+      }
+    },
+    "non_target": {
+      "n": 393,
+      "mean_buy_rate": 62.3
+    }
+  }
+}
