@@ -1,0 +1,13 @@
+{
+  "model": "_npo_merged_4b_gpu0",
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 1308000,
+  "total_output_tokens": 359778,
+  "total_tokens": 1667778,
+  "total_time_seconds": 98.11,
+  "average_time_per_set_seconds": 98.11,
+  "average_latency_seconds": 11.16,
+  "average_ttft_seconds": 11.16
+}

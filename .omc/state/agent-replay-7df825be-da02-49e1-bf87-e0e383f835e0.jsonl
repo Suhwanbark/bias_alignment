@@ -1,0 +1,4 @@
+{"t":0,"agent":"a087efc","agent_type":"statusline-setup","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a087efc","agent_type":"statusline-setup","event":"agent_stop","success":true,"duration_ms":63696}
+{"t":0,"agent":"a28629a","agent_type":"claude-code-guide","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a28629a","agent_type":"claude-code-guide","event":"agent_stop","success":true,"duration_ms":28610}

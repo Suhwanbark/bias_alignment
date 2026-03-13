@@ -1,0 +1,14 @@
+[2026-03-12 13:07:47] ══════════════════════════════════════════════════════════════
+[2026-03-12 13:07:47] NPO 4B Checkpoint Evaluation
+[2026-03-12 13:07:47]   Adapter: /home/felab/workspace/bias_alignment/models/adapters/npo_qwen4b_v2
+[2026-03-12 13:07:47]   Checkpoints: 50 100 150 200 250
+[2026-03-12 13:07:47]   Results: /home/felab/workspace/bias_alignment/npo/results/npo_qwen4b_v2
+[2026-03-12 13:07:47]   GPU: 1, TP: 1
+[2026-03-12 13:07:47] ══════════════════════════════════════════════════════════════
+[2026-03-12 13:07:52] 
+[2026-03-12 13:07:52] [1/5] checkpoint-50
+[2026-03-12 13:07:52]     ── step 50 ──
+[2026-03-12 13:07:52]     [1/4] LoRA merge...
+[2026-03-12 13:08:50]     Merge done
+[2026-03-12 13:08:50]     [2/4] vLLM serve (TP=1, GPU=1, port=8001)...
+[2026-03-12 13:09:10]     [ERROR] vLLM start failed

@@ -1,0 +1,13 @@
+{
+  "model": "gemma-3-4b-it",
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 1472900,
+  "total_output_tokens": 2158158,
+  "total_tokens": 3631058,
+  "total_time_seconds": 742.85,
+  "average_time_per_set_seconds": 742.85,
+  "average_latency_seconds": 34.05,
+  "average_ttft_seconds": 31.9
+}

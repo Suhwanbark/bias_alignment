@@ -37,15 +37,24 @@ MODE="${2:-train-only}"
 
 # ─── 경로 설정 ──────────────────────────────────────────────
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
-LF_DIR="${ROOT_DIR}/debias/llamafactory"
-LOCAL_DIR="${ROOT_DIR}/local"
+EVAL_DIR="${ROOT_DIR}/eval"
 MODELS_DIR="/home/jovyan/models"
 
-CONFIG_FILE="${LF_DIR}/configs/${CONFIG_NAME}.yaml"
+# Auto-detect SFT vs DPO from CONFIG_NAME prefix
+if [[ "$CONFIG_NAME" == sft_* ]]; then
+    TRAIN_DIR="${ROOT_DIR}/sft"
+elif [[ "$CONFIG_NAME" == dpo_* ]]; then
+    TRAIN_DIR="${ROOT_DIR}/dpo"
+else
+    echo "[ERROR] CONFIG_NAME must start with 'sft_' or 'dpo_': ${CONFIG_NAME}"
+    exit 1
+fi
+
+CONFIG_FILE="${TRAIN_DIR}/configs/${CONFIG_NAME}.yaml"
 MERGE_DIR="${MODELS_DIR}/_tmp_merged"
 VLLM_PORT=8000
 
-LOG_DIR="${ROOT_DIR}/debias/logs"
+LOG_DIR="${ROOT_DIR}/logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="${LOG_DIR}/${CONFIG_NAME}_$(date '+%Y%m%d_%H%M%S').log"
 
@@ -58,21 +67,21 @@ if [ ! -f "$CONFIG_FILE" ]; then
     echo "[ERROR] Config 없음: ${CONFIG_FILE}"
     echo ""
     echo "사용 가능한 설정:"
-    ls "${LF_DIR}/configs/" | grep -v merge | sed 's/.yaml$//' | sed 's/^/  /'
+    ls "${TRAIN_DIR}/configs/" | grep -v merge | sed 's/.yaml$//' | sed 's/^/  /'
     exit 1
 fi
 
 MODEL_DIR=$(get_yaml_value "output_dir" "$CONFIG_FILE")
 BASE_MODEL=$(get_yaml_value "model_name_or_path" "$CONFIG_FILE")
-RESULT_DIR="${LOCAL_DIR}/${CONFIG_NAME}/result"
+RESULT_DIR="${TRAIN_DIR}/results/${CONFIG_NAME}/result"
 
 # ─── 모델별 설정 (4B vs 30B) ──────────────────────────────
 if echo "$BASE_MODEL" | grep -qi "4B"; then
     VLLM_TP=1
-    MERGE_TEMPLATE="${LF_DIR}/configs/merge_4b.yaml"
+    MERGE_TEMPLATE="${TRAIN_DIR}/configs/merge_4b.yaml"
 else
     VLLM_TP=2
-    MERGE_TEMPLATE="${LF_DIR}/configs/merge.yaml"
+    MERGE_TEMPLATE="${TRAIN_DIR}/configs/merge.yaml"
 fi
 
 
@@ -158,7 +167,7 @@ do_train() {
 
     kill_gpu_processes
 
-    bash "${LF_DIR}/run_train.sh" "$CONFIG_FILE" 2>&1 | tee -a "$LOG_FILE"
+    bash "${TRAIN_DIR}/train.sh" "$CONFIG_FILE" 2>&1 | tee -a "$LOG_FILE"
     local status=${PIPESTATUS[0]}
 
     if [ $status -ne 0 ]; then
@@ -259,7 +268,7 @@ except: print('', end='')
     log "    [3/4] Bias index 측정 (3 sets × 10 trials)..."
     mkdir -p "$step_dir"
 
-    pushd "$LOCAL_DIR" > /dev/null
+    pushd "$EVAL_DIR" > /dev/null
     python bias_attribute.py \
         --model-id "$MERGE_DIR" \
         --vllm-url "http://localhost:${VLLM_PORT}/v1" \

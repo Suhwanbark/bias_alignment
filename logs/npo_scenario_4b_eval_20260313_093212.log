@@ -1,0 +1,15 @@
+[2026-03-13 09:32:12] ══════════════════════════════════════════════════════════════
+[2026-03-13 09:32:12] NPO Scenario 4B — Parallel Evaluation (2 GPUs)
+[2026-03-13 09:32:12]   Adapter: /home/felab/workspace/bias_alignment/models/adapters/npo_scenario_4b
+[2026-03-13 09:32:12]   Max step: 150
+[2026-03-13 09:32:12]   Results: /home/felab/workspace/bias_alignment/experiments/npo_scenario_4b/results/npo_scenario_4b
+[2026-03-13 09:32:12] ══════════════════════════════════════════════════════════════
+[2026-03-13 09:32:17] Checkpoints: 50 100 150
+[2026-03-13 09:32:17] Plan: baseline + step_50 (pair 1), step_100 + step_150 (pair 2)
+[2026-03-13 09:32:17] ── Evaluating pair: baseline + step_50 ──
+[2026-03-13 09:32:17]   Merging step_50...
+[2026-03-13 09:33:15]   Starting vLLM: GPU 0 (port 8000) = baseline
+[2026-03-13 09:33:15]   Starting vLLM: GPU 1 (port 8001) = step_50
+[2026-03-13 09:34:20]   vLLM GPU 0 ready
+[2026-03-13 09:34:20]   vLLM GPU 1 ready
+[2026-03-13 09:34:20]   Running evaluations...

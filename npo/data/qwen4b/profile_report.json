@@ -1,0 +1,178 @@
+{
+  "ticker_scores": {
+    "A": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Healthcare"
+    },
+    "ADI": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Technology"
+    },
+    "AMP": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "APH": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology"
+    },
+    "BAX": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Healthcare"
+    },
+    "C": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "CAG": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Consumer Defensive"
+    },
+    "CCI": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Real Estate"
+    },
+    "CDW": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Technology"
+    },
+    "CFG": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "CHTR": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Communication Services"
+    },
+    "CINF": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "CSX": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Industrials"
+    },
+    "EG": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "FANG": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Energy"
+    },
+    "FRT": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Real Estate"
+    },
+    "GD": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Industrials"
+    },
+    "GL": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "HCA": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Healthcare"
+    },
+    "HLT": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Consumer Cyclical"
+    },
+    "INTU": {
+      "bias_score": 100.0,
+      "group": "high_bias",
+      "sector": "Technology"
+    },
+    "IVZ": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "J": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Industrials"
+    },
+    "JNPR": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Technology"
+    },
+    "KMI": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Energy"
+    },
+    "KMX": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Consumer Cyclical"
+    },
+    "LEN": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Consumer Cyclical"
+    },
+    "LH": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Healthcare"
+    },
+    "O": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Real Estate"
+    },
+    "PGR": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Financial Services"
+    },
+    "PSA": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Real Estate"
+    },
+    "REG": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Real Estate"
+    },
+    "UPS": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Industrials"
+    },
+    "VLO": {
+      "bias_score": -100.0,
+      "group": "high_bias",
+      "sector": "Energy"
+    }
+  },
+  "summary": {
+    "total_forget_tickers": 34,
+    "forget_samples": 323
+  }
+}

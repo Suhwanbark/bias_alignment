@@ -1,0 +1,13 @@
+{
+  "model": "Llama-3.2-3B-Instruct",
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 1397232,
+  "total_output_tokens": 242866,
+  "total_tokens": 1640098,
+  "total_time_seconds": 87.26,
+  "average_time_per_set_seconds": 87.26,
+  "average_latency_seconds": 1.02,
+  "average_ttft_seconds": 1.02
+}

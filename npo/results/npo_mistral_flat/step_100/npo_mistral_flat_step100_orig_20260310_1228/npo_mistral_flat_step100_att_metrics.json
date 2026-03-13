@@ -1,0 +1,13 @@
+{
+  "model": "npo_mistral_flat_step100",
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 2110777,
+  "total_output_tokens": 194248,
+  "total_tokens": 2305025,
+  "total_time_seconds": 283.41,
+  "average_time_per_set_seconds": 283.41,
+  "average_latency_seconds": 3.3,
+  "average_ttft_seconds": 3.3
+}

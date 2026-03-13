@@ -1,0 +1,51 @@
+# SimNPO training config for Qwen3-30B-A3B-Instruct-2507
+#
+# Reference-free unlearning (no ref model for forget loss).
+# Same data as new_npo/ (shared via relative path).
+# Hyperparameters matched to npo/ defaults.
+#
+# Ref: Fan et al., "Simplicity Prevails" (NeurIPS 2025, arXiv:2410.07163)
+
+model:
+  name: Qwen/Qwen3-30B-A3B-Instruct-2507
+  max_length: 2048
+
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.1
+  target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+training:
+  lr: 2e-5
+  beta: 0.1
+  gamma: 0.0              # SimNPO reward margin (>= 0, 0 = no margin)
+  max_steps: 150
+  save_steps: 50
+  eval_steps: 50
+  warmup_steps: 10
+  grad_accum: 4
+  max_grad_norm: 1.0
+  weight_decay: 0.01
+  seed: 42
+
+loss_weights:
+  alpha_forget: 1.0
+  alpha_retain: 1.0
+  alpha_kl: 0.2            # Ignored if kl_data is null
+
+batch_sizes:
+  forget: 2
+  retain: 4
+  kl: 2
+
+# Reuse new_npo data (paths relative to simple_npo/)
+data:
+  forget: ../new_npo/data/qwen3-30b-a3b-instruct-2507/forget.jsonl
+  retain: null               # forget-only mode
+  kl: null
+  eval_mini: ../new_npo/data/qwen3-30b-a3b-instruct-2507/eval_mini.jsonl
+  profile_report: ../new_npo/data/qwen3-30b-a3b-instruct-2507/profile_report.json
+
+output_dir: results/qwen3-30b-a3b-instruct-2507
+tensor_parallel: 2

@@ -1,0 +1,13 @@
+{
+  "model": "Mistral-Small-3.1-24B-Instruct-2503",
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 2849487,
+  "total_output_tokens": 282654,
+  "total_tokens": 3132141,
+  "total_time_seconds": 347.45,
+  "average_time_per_set_seconds": 347.45,
+  "average_latency_seconds": 4.06,
+  "average_ttft_seconds": 4.06
+}

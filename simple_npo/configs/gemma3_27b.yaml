@@ -1,0 +1,50 @@
+# SimNPO training config for google/gemma-3-27b-it
+#
+# Reference-free unlearning (no ref model for forget loss).
+# Uses npo/data/gemma-3-27b-it data (forget-only mode).
+#
+# LoRA targets language_model layers only (excludes vision tower).
+
+model:
+  name: google/gemma-3-27b-it
+  max_length: 2048
+
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.1
+  target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+training:
+  lr: 2e-5
+  beta: 0.1
+  gamma: 0.0
+  max_steps: 150
+  save_steps: 50
+  eval_steps: 50
+  warmup_steps: 10
+  grad_accum: 4
+  max_grad_norm: 1.0
+  weight_decay: 0.01
+  seed: 42
+
+loss_weights:
+  alpha_forget: 1.0
+  alpha_retain: 1.0
+  alpha_kl: 0.2
+
+batch_sizes:
+  forget: 2
+  retain: 4
+  kl: 2
+
+# Use npo/data/gemma-3-27b-it (paths relative to simple_npo/)
+data:
+  forget: ../npo/data/gemma-3-27b-it/forget.jsonl
+  retain: null
+  kl: null
+  eval_mini: ../npo/data/gemma-3-27b-it/eval_mini.jsonl
+  profile_report: ../npo/data/gemma-3-27b-it/profile_report.json
+
+output_dir: results/gemma-3-27b-it
+tensor_parallel: 2

@@ -1,0 +1,13 @@
+{
+  "model": "_npo_merged_4b",
+  "total_sets": 1,
+  "total_prompts": 4270,
+  "total_cost_usd": 0.0,
+  "total_input_tokens": 2103584,
+  "total_output_tokens": 423023,
+  "total_tokens": 2526607,
+  "total_time_seconds": 162.98,
+  "average_time_per_set_seconds": 162.98,
+  "average_latency_seconds": 18.58,
+  "average_ttft_seconds": 18.58
+}

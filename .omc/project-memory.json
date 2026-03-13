@@ -1,0 +1,498 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1773305885958,
+  "projectRoot": "/home/felab/workspace/bias_alignment",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Python",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "requirements.txt"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pip",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "archive": {
+      "path": "archive",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1773305885944,
+      "keyFiles": []
+    },
+    "data": {
+      "path": "data",
+      "purpose": "Data files",
+      "fileCount": 5,
+      "lastAccessed": 1773305885948,
+      "keyFiles": [
+        "README.md",
+        "evidence_corpus_qual_mixed.csv",
+        "evidence_corpus_quant_mixed.csv",
+        "evidence_corpus_view.csv",
+        "sp500_final.csv"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 9,
+      "lastAccessed": 1773305885950,
+      "keyFiles": [
+        "260205_alignment_v1.pdf",
+        "260211_alignment.pdf",
+        "SFT_ABLATION_SETUP.md",
+        "SFT_DATA_EXAMPLES.md",
+        "SFT_EXPERIMENTS.md"
+      ]
+    },
+    "dpo": {
+      "path": "dpo",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1773305885950,
+      "keyFiles": [
+        "dataset_info.json",
+        "train.sh"
+      ]
+    },
+    "eval": {
+      "path": "eval",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1773305885951,
+      "keyFiles": [
+        "bias_attribute.py",
+        "config.py",
+        "llm_clients.py",
+        "result_attribute.py",
+        "run_context_inference.py"
+      ]
+    },
+    "logs": {
+      "path": "logs",
+      "purpose": null,
+      "fileCount": 32,
+      "lastAccessed": 1773305885951,
+      "keyFiles": [
+        "all_eval_pipeline.log",
+        "biasunlearn_a75r25_eval_20260217_073714.log",
+        "biasunlearn_a75r25_eval_20260217_094059.log",
+        "biasunlearn_a75r25_eval_20260217_100003.log",
+        "eval_sweep_20260217_094059.log"
+      ]
+    },
+    "models": {
+      "path": "models",
+      "purpose": "Data models",
+      "fileCount": 0,
+      "lastAccessed": 1773305885952,
+      "keyFiles": []
+    },
+    "npo": {
+      "path": "npo",
+      "purpose": null,
+      "fileCount": 4,
+      "lastAccessed": 1773305885953,
+      "keyFiles": [
+        "PLAN.md",
+        "prepare_dataset.py",
+        "train.py",
+        "unlearning_methods.md"
+      ]
+    },
+    "sft": {
+      "path": "sft",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1773305885953,
+      "keyFiles": [
+        "dataset_info.json",
+        "train.sh"
+      ]
+    },
+    "simple_npo": {
+      "path": "simple_npo",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1773305885953,
+      "keyFiles": [
+        "__init__.py"
+      ]
+    },
+    "dpo/data": {
+      "path": "dpo/data",
+      "purpose": "Data files",
+      "fileCount": 13,
+      "lastAccessed": 1773305885955,
+      "keyFiles": [
+        "dpo_v1.jsonl",
+        "dpo_v10.jsonl",
+        "dpo_v11.jsonl"
+      ]
+    },
+    "npo/data": {
+      "path": "npo/data",
+      "purpose": "Data files",
+      "fileCount": 1,
+      "lastAccessed": 1773305885956,
+      "keyFiles": [
+        "contexts.jsonl"
+      ]
+    },
+    "npo/scripts": {
+      "path": "npo/scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 3,
+      "lastAccessed": 1773305885956,
+      "keyFiles": [
+        "run_eval.sh",
+        "run_sweep.sh",
+        "run_train.sh"
+      ]
+    },
+    "sft/data": {
+      "path": "sft/data",
+      "purpose": "Data files",
+      "fileCount": 8,
+      "lastAccessed": 1773305885956,
+      "keyFiles": [
+        "sft_v1.jsonl",
+        "sft_v2.jsonl",
+        "sft_v3.jsonl"
+      ]
+    },
+    "simple_npo/models": {
+      "path": "simple_npo/models",
+      "purpose": "Data models",
+      "fileCount": 0,
+      "lastAccessed": 1773305885957,
+      "keyFiles": []
+    },
+    "simple_npo/scripts": {
+      "path": "simple_npo/scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 4,
+      "lastAccessed": 1773305885958,
+      "keyFiles": [
+        "run_eval.sh",
+        "run_eval_local.py",
+        "run_sweep.sh"
+      ]
+    },
+    "simple_npo/src": {
+      "path": "simple_npo/src",
+      "purpose": "Source code",
+      "fileCount": 5,
+      "lastAccessed": 1773305885958,
+      "keyFiles": [
+        "__init__.py",
+        "dataset.py",
+        "losses.py"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "npo/scripts/eval_retain.sh",
+      "accessCount": 16,
+      "lastAccessed": 1773325155599,
+      "type": "file"
+    },
+    {
+      "path": "npo/scripts/run_train.sh",
+      "accessCount": 6,
+      "lastAccessed": 1773316064355,
+      "type": "file"
+    },
+    {
+      "path": "eval/bias_attribute.py",
+      "accessCount": 6,
+      "lastAccessed": 1773327043709,
+      "type": "directory"
+    },
+    {
+      "path": "models/adapters/npo_qwen4b/train_config.json",
+      "accessCount": 3,
+      "lastAccessed": 1773313821864,
+      "type": "file"
+    },
+    {
+      "path": "npo/prepare_dataset.py",
+      "accessCount": 3,
+      "lastAccessed": 1773327042927,
+      "type": "file"
+    },
+    {
+      "path": "npo/train.py",
+      "accessCount": 3,
+      "lastAccessed": 1773327074770,
+      "type": "file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "accessCount": 2,
+      "lastAccessed": 1773313482441,
+      "type": "file"
+    },
+    {
+      "path": "npo/scripts/run_eval.sh",
+      "accessCount": 2,
+      "lastAccessed": 1773316844382,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_buyrate_vs_absbias.png",
+      "accessCount": 2,
+      "lastAccessed": 1773321758679,
+      "type": "file"
+    },
+    {
+      "path": "eval/config.py",
+      "accessCount": 2,
+      "lastAccessed": 1773327043324,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_context/step_300/npo_qwen4b_context_step300_att_result.json",
+      "accessCount": 1,
+      "lastAccessed": 1773305936005,
+      "type": "file"
+    },
+    {
+      "path": "models/adapters/npo_qwen4b_context/train_config.json",
+      "accessCount": 1,
+      "lastAccessed": 1773305936968,
+      "type": "file"
+    },
+    {
+      "path": "npo/data/qwen3-4b-context-extreme/profile_report.json",
+      "accessCount": 1,
+      "lastAccessed": 1773305937294,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_context/buyrate_progression.png",
+      "accessCount": 1,
+      "lastAccessed": 1773306075260,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_context/step_comparison.png",
+      "accessCount": 1,
+      "lastAccessed": 1773306076539,
+      "type": "file"
+    },
+    {
+      "path": "npo/data/qwen3-30b-a3b-instruct-2507/profile_report.json",
+      "accessCount": 1,
+      "lastAccessed": 1773307211773,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_forget/result/step_50/_tmp_merged_att_combined.csv",
+      "accessCount": 1,
+      "lastAccessed": 1773307259075,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_flat_kl/result/step_200/_tmp_merged_att_combined.csv",
+      "accessCount": 1,
+      "lastAccessed": 1773307259251,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_context/buyrate_vs_absbias.png",
+      "accessCount": 1,
+      "lastAccessed": 1773307727277,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1773313400300,
+      "type": "file"
+    },
+    {
+      "path": ".env.example",
+      "accessCount": 1,
+      "lastAccessed": 1773313400603,
+      "type": "file"
+    },
+    {
+      "path": "run.sh",
+      "accessCount": 1,
+      "lastAccessed": 1773313403831,
+      "type": "file"
+    },
+    {
+      "path": "run_npo_eval.sh",
+      "accessCount": 1,
+      "lastAccessed": 1773313403985,
+      "type": "file"
+    },
+    {
+      "path": "requirements.txt",
+      "accessCount": 1,
+      "lastAccessed": 1773313404287,
+      "type": "file"
+    },
+    {
+      "path": "sft/train.sh",
+      "accessCount": 1,
+      "lastAccessed": 1773313408013,
+      "type": "file"
+    },
+    {
+      "path": "dpo/train.sh",
+      "accessCount": 1,
+      "lastAccessed": 1773313408077,
+      "type": "file"
+    },
+    {
+      "path": "sft/configs/sft_v7.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1773313411995,
+      "type": "file"
+    },
+    {
+      "path": "dpo/configs/dpo_v1.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1773313412228,
+      "type": "file"
+    },
+    {
+      "path": "eval/run_eval.sh",
+      "accessCount": 1,
+      "lastAccessed": 1773313415641,
+      "type": "file"
+    },
+    {
+      "path": "simple_npo/configs/qwen3_30b.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1773313415828,
+      "type": "file"
+    },
+    {
+      "path": "EXCLUDED_FROM_GIT.md",
+      "accessCount": 1,
+      "lastAccessed": 1773313416038,
+      "type": "file"
+    },
+    {
+      "path": "archive/debias/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1773313422000,
+      "type": "file"
+    },
+    {
+      "path": "npo/PLAN.md",
+      "accessCount": 1,
+      "lastAccessed": 1773313422441,
+      "type": "file"
+    },
+    {
+      "path": "npo/data/qwen4b/profile_report.json",
+      "accessCount": 1,
+      "lastAccessed": 1773315558497,
+      "type": "file"
+    },
+    {
+      "path": "sft/configs/merge_4b.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1773316905623,
+      "type": "file"
+    },
+    {
+      "path": "eval/vllm",
+      "accessCount": 1,
+      "lastAccessed": 1773317132125,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_retain_all_steps.png",
+      "accessCount": 1,
+      "lastAccessed": 1773321177703,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_retain_buyrate_vs_absbias.png",
+      "accessCount": 1,
+      "lastAccessed": 1773321812108,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_retain_sellonly_buyrate_vs_absbias.png",
+      "accessCount": 1,
+      "lastAccessed": 1773325370530,
+      "type": "file"
+    },
+    {
+      "path": "npo/scripts/eval_retain_parallel.sh",
+      "accessCount": 1,
+      "lastAccessed": 1773325490447,
+      "type": "file"
+    },
+    {
+      "path": "npo/results/npo_qwen4b_retain_sellonly_n1_buyrate_vs_absbias.png",
+      "accessCount": 1,
+      "lastAccessed": 1773326272789,
+      "type": "file"
+    },
+    {
+      "path": "npo/bias_profiling/qwen3-30b-a3b-instruct-2507_att_combined.csv",
+      "accessCount": 1,
+      "lastAccessed": 1773327059098,
+      "type": "file"
+    },
+    {
+      "path": "simple_npo/src/train.py",
+      "accessCount": 1,
+      "lastAccessed": 1773327081529,
+      "type": "file"
+    },
+    {
+      "path": "simple_npo/scripts/run_eval.sh",
+      "accessCount": 1,
+      "lastAccessed": 1773327082414,
+      "type": "file"
+    },
+    {
+      "path": "simple_npo/scripts/run_eval_local.py",
+      "accessCount": 1,
+      "lastAccessed": 1773327089387,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

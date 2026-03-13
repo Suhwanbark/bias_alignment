@@ -1,0 +1,21 @@
+
+════════ Qwen3-4B NPO Step 50 ════════
+  vLLM 시작 (LoRA)...
+  vLLM READY
+  평가 시작...
+
+Bias result saved to ../npo/results/npo_qwen4b_extreme/step_50/npo_step50_orig_20260310_1342/npo_step50_att_result.json
+★ Bias Index: 129
+
+결과 폴더: ../npo/results/npo_qwen4b_extreme/step_50/npo_step50_orig_20260310_1342
+/tmp/run_all_eval.sh: line 6: 491179 Killed                  CUDA_VISIBLE_DEVICES=0 nohup vllm serve Qwen/Qwen3-4B-Instruct-2507 --tensor-parallel-size 1 --port 8000 --trust-remote-code --max-model-len 4096 --enable-lora --lora-modules npo_step${STEP}=models/adapters/npo_qwen4b_extreme/checkpoint-${STEP} > /tmp/vllm_qwen4b_step${STEP}.log 2>&1
+  Step 50 완료
+
+════════ Qwen3-4B NPO Step 100 ════════
+  vLLM 시작 (LoRA)...
+  평가 시작...
+    self._inferred_dtype = self._validate(data)
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/felab/.local/lib/python3.11/site-packages/pandas/core/strings/accessor.py", line 248, in _validate
+    raise AttributeError("Can only use .str accessor with string values!")
+AttributeError: Can only use .str accessor with string values!. Did you mean: 'std'?

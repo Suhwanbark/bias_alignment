@@ -415,15 +415,44 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.model_name, trust_remote_code=True)
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
+    # Mistral 등 chat_template이 없는 모델용 fallback
+    if tokenizer.chat_template is None:
+        tokenizer.chat_template = (
+            "{{ bos_token }}"
+            "{% for message in messages %}"
+            "{% if message['role'] == 'user' %}[INST] {{ message['content'] }} [/INST]"
+            "{% elif message['role'] == 'assistant' %}{{ message['content'] }}{{ eos_token }}"
+            "{% endif %}"
+            "{% endfor %}"
+        )
+        logger.info("chat_template not found — using Mistral instruct fallback")
 
     logger.info("Loading model: %s", args.model_name)
-    model = AutoModelForCausalLM.from_pretrained(
-        args.model_name,
-        dtype=torch.bfloat16,
-        device_map="auto",
-        trust_remote_code=True,
-        attn_implementation="sdpa",
-    )
+    # Multimodal 모델(Mistral3, Gemma3 등)은 AutoModelForCausalLM으로 로드 불가
+    # → 전체 로드 후 text backbone만 추출
+    from transformers import AutoConfig
+    _cfg = AutoConfig.from_pretrained(args.model_name, trust_remote_code=True)
+    if hasattr(_cfg, "text_config"):
+        logger.info("Multimodal model detected — loading full model then extracting text backbone")
+        from transformers import AutoModelForImageTextToText
+        _full = AutoModelForImageTextToText.from_pretrained(
+            args.model_name,
+            torch_dtype=torch.bfloat16,
+            device_map="auto",
+            trust_remote_code=True,
+            attn_implementation="sdpa",
+        )
+        # text backbone (model + lm_head) 은 MistralForCausalLM 구조와 동일
+        model = _full
+        # LoRA는 language_model 내부에 적용됨
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            args.model_name,
+            dtype=torch.bfloat16,
+            device_map="auto",
+            trust_remote_code=True,
+            attn_implementation="sdpa",
+        )
 
     # Apply LoRA
     lora_config = LoraConfig(
@@ -435,6 +464,11 @@ def main():
         task_type="CAUSAL_LM",
     )
     model = get_peft_model(model, lora_config)
+    model.enable_input_require_grads()
+    # gradient checkpointing은 multi-GPU + device_map="auto"에서 meta device 에러 발생 가능
+    # 4B 등 작은 모델은 불필요하므로 환경변수로 제어
+    if os.environ.get("DISABLE_GRAD_CKPT") != "1":
+        model.gradient_checkpointing_enable()
     model.print_trainable_parameters()
 
     # -----------------------------------------------------------------------
